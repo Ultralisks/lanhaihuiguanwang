@@ -1,0 +1,23 @@
+.nav>li>a{padding: 0;}
+.headnav{height: 90px;background: rgba(255, 255, 255, 0);position: fixed;top: 0;width: 100%;z-index: 99;margin: auto;}
+.headnav>.margin{width: 1200px;margin: auto;}
+.headnav>.margin>.logo{width: 162px;margin-top: 20px;}
+.headnav>.margin>.tel{width: 162px;margin-top: 20px;}
+.headnav>.margin>ul{margin: auto;}
+.headnav>.margin>ul>li{float: left;}
+.headnav>.margin>ul>li>a{display: block;height: 90px;margin: 0 20px;text-align: center;line-height: 90px;color: #fff;font-size: 18px;position: relative;}
+.headnav>.margin>ul>li>a:after{content: "";display: block;width: 0;height: 2px;position: absolute;bottom: 10px;left: 50%;background: #fff;transition: all .5s;}
+.headnav>.margin>ul>li>a.scroll:after{content: "";display: block;width: 0;height: 2px;position: absolute;bottom: 10px;left: 50%;background: #333;transition: all .5s;}
+.headnav>.margin>ul>li>a:hover:after{width: 100%;left: 0;}
+.headnav>.margin>.subnav>div{position: fixed;top: 90px;width: 100%;left: 0;height:260px;transform: scaleY(0);transition: all .5s;z-index: 9;transform-origin: 50% 0 0;}
+.headnav>.margin>.subnav>div>.left{width: 50%;height: 300px;float: left;background: rgba(255, 255, 255, .9);padding: 50px 0;position: relative;}
+.headnav>.margin>.subnav>div>.left>ul{width:300px;height:200px;;font: 16px/32px "";overflow: auto;position: absolute;right: 0px;}
+.headnav>.margin>.subnav>div>.right{width: 50%;height: 300px;float: right;background: rgba(255, 255, 255, .8);padding: 20px 0;position: relative;}
+.headnav>.margin>.subnav>div>.right>div{position: absolute;left: 100px;width: 450px;left: 100px;}
+.headnav>.margin>.subnav>div>.right>div>.title{font-size: 24px;font-weight: 400;line-height: 48px;}
+.headnav>.margin>.subnav>div>.right>div>img{width: 400px;margin-bottom: 5px;}
+.headnav>.margin>.subnav>div>.right>div>.content{font-size: 16px;line-height: 24px;}
+.headnav>.margin>.subnav>.jiejue>.left{position: relative;}
+.headnav>.margin>.subnav>.jiejue>.left>.navmoreleft{position: absolute;right: 315px;top: 60px;}
+.headnav>.margin>.subnav>.jiejue>.left>.navmoreul{position: absolute;width: 200px;height: 300px;padding: 50px 0;right: 300px;top: 0;}
+.special{position: absolute;width: 12px;height: 8px;right: 4%;top: 5px;display: block;}

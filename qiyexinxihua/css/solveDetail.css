@@ -1,0 +1,48 @@
+.solveDetail{
+  margin: 0 auto;
+  padding-bottom: 30px;
+  max-width: 1200px;
+  width: 95%;
+}
+.solveDetail>.tit{
+  padding: 30px 0;
+  text-align: center;
+}
+.solveDetail>.body{
+}
+
+
+.solveDetail>.body h4{
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.solveDetail>.body p{
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+.solveDetail>.body img{
+  margin: 0 auto 20px;
+  display: block;
+  width: 50%;
+  min-width: 300px;
+
+}
+.solveDetail>.body img.big{
+  width: 70%;
+}
+.solveDetail>.btn{
+  display: block;
+  margin: 10px auto 0;
+  padding: 6px 40px;
+  width: 150px;
+  height: 40px;
+  line-height: 25px;
+  color: #009be1;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 30px;
+}
+
+
+
+

@@ -1,0 +1,63 @@
+/*=============hStyle=============*/
+.ic_head_fixed {position: fixed;top: 0;left: 0;right: 0;width: 100%;z-index: 999; background:#2e3136}
+.header-bx.header-bx-collapse,.header-bx.nav-sub-show {background: #2e3136;/*background: rgba(0,0,0,.9);*/}
+.header {border-bottom: 3px solid rgba(255,255,255,.1);height: 68px;}
+.header-bx-collapse .header {border: none;height: 68px;}
+.nav-sub-show .header {border: none;}
+.header-bx-collapse .logo {width: 88px;}
+.header-bx-collapse .nav-ul {padding-top: 5px;}
+.header-bx-collapse .nav-ul li a {line-height: 60px;font-size: 18px;}
+.header-bx-collapse .r-tel {margin-top: -18px;font-size: 18px;}
+.lt-ie9.lt-ie8 .header,.lt-ie9 .header {border-bottom: 1px solid #121212;}
+.h-bx-v {position: relative;}
+.header-wrap {padding-left: 180px;padding-right: 210px;position: relative;height: 100%;z-index: 9;}
+.logo {position: absolute;width: 88px;top: 10px;left: 0;}
+.logo img {display: inline-block;max-width: 100%;font-size: 12px;color: #fff;}
+
+.ic-sub-nav-bx {background: #e1e8ed;height: 40px;width: 100%;}
+.ic-sub-nav-list {padding-left: 180px;}
+.ic-sub-nav-list span,.ic-sub-nav-list a {line-height: 40px;display: inline-block;padding: 0 10px;font-size: 14px;color: #666;vertical-align: top;}
+.ic-sub-nav-list a.current,.ic-sub-nav-list a:hover {color: #2f75bb;text-decoration: none;}
+/*.nav{ padding:0; float:none}*/
+.nav-ul {padding-top: 20px;}
+.nav-ul li {display: inline-block;+display: inline;padding: 0 20px;}
+.lt-ie9.lt-ie8 .nav-ul li {display: inline;font-size: 0;vertical-align: middle;}
+.nav-ul li a {border-bottom: 3px solid transparent;display: inline-block;line-height: 48px;font-size: 20px;color: #f2f2f2;}
+.lt-ie9.lt-ie8 .nav-ul li a,.f-link-ul li,.f-link-ul li a {display: inline;}
+.lt-ie9.lt-ie8 .nav-ul li a,.lt-ie9 .nav-ul li a,.lt-ie9.lt-ie8 .tel-txt,.lt-ie9 .tel-txt {font-family: 'SimHei';}
+.nav-ul li.current a {border-color: #2f75bb;color: #2f75bb;}
+.nav-ul li a:hover,.nav-ul li.subShow a {color: #2f75bb;text-decoration: none;}
+.r-tel {position: absolute;right: 0;top: 50%;margin-top: -9px;line-height: 31px;display: block;font-size: 16px;/*padding: 0 12px;border: dotted 1px #fff;*/}
+.r-tel a{padding: 0 12px;}
+.r-tel a.reg{border: dotted 1px #d2d1d1;}
+.r-tel a:hover{text-decoration: none;}
+.r-tel *,.sc-btn * {vertical-align: middle;display: inline-block;}
+.tel-icon {background: url("../images/tel.png") no-repeat scroll center center;width: 40px;height: 40px;}
+.nav-sub {border-top: 1px solid rgba(255,255,255,0);position: fixed;top: -240px;right: 0;left: 0;width: 100%;z-index: -1;opacity: 0;filter: alpha(opacity=0);}
+.nav-sub-bx {background: #2e3136;background: rgba(46,49,54,.9);padding: 20px 0;}
+.nav-sub-show .nav-sub {top: 104px;border-top: 1px solid rgba(255,255,255,.12);opacity: 1;filter: alpha(opacity=100);z-index: 0;}
+.header-bx-collapse.nav-sub-show .nav-sub {top: 67px;border-top: 1px solid rgba(255,255,255,.12);}
+.nav-sub-dl dl {float: left;width: 33.33%;}
+.nav-sub-dl dl dt,.nav-sub-dl dl dd {color: #ccc;padding: 0 20px;}
+.nav-sub-dl dl dt {line-height: 40px;margin-bottom: 25px;}
+.nav-sub-dl dl dt span {font-size: 20px;}
+.nav-sub-dl dl dd {border-left: 1px solid rgba(255, 255, 255, 0.06);}
+.nav-sub-dl dl:first-child dd {border: none;}
+.nav-sub-link {float: left;width: 25%;margin: 0;}
+.nav-ul .nav-sub-link a,.header-bx-collapse .nav-ul .nav-sub-link a {line-height: inherit;opacity: .6;filter: alpha(opacity=60);}
+.lt-ie9.lt-ie8 .nav-ul .nav-sub-link a,.lt-ie9 .nav-ul .nav-sub-link a {filter: none;}
+.nav-sub-link em {display: inline-block;width: 38px;height: 38px;vertical-align: middle;}
+.nav-ul .nav-sub-link a:hover,.nav-ul .nav-sub-link a:hover * {color: #e2e2e2;text-decoration: none;opacity: 1;filter: alpha(opacity=100);}
+.nav-sub-link a:hover em {transform: rotateY(180deg);-webkit-transform: rotateY(180deg);}
+.nav-ul .nav-sub-link figcaption {color: #ccc;font-size: 16px;line-height: 40px;}
+.viewport{ margin:0 auto;width: 1160px;}
+@media (min-width: 1400px) {
+  .viewport {width: 1200px;}
+  .vp-pro-links dl {padding-left: 98px;}
+  .vp-pro-links dl dt {left: 10px;}
+  .other-case li {margin: 20px 10px;}
+}
+
+.lighting-body{
+    background-color: white;
+}

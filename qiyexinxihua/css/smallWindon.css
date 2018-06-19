@@ -1,0 +1,89 @@
+/*首页二维码start*/
+.cat_sao_container{
+    position: fixed;
+    bottom:25%;
+    right: 0;
+    z-index: 100;
+}
+.cat_text{
+    width: 56px;
+    height: 130px;
+    position: relative;
+}
+.cat_text ul{
+    width: 56px;
+    height: 130px;
+    border: 1px solid #1ab394;
+    box-shadow:1px 1px 5px #1ab394;
+
+}
+.cat_text ul li {
+    width:56px;
+    height: 65px;
+    background-color: #1ab394;
+    border-bottom: 1px solid #1ab394;
+}
+.cat_text ul li a{
+    display: block;
+    width:56px;
+    height: 40px;
+}
+.cat_text ul li a img{
+    width: 26px;
+    height: 36px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+
+}
+.cat_text p{
+    font-size: 12px;
+    color: white;
+    line-height: 16px;
+    text-align: center;
+}
+.cat_sao_img{
+    width: 160px;
+    height: 200px;
+    padding:5px;
+    position: absolute;
+    background-color: white;
+    top:40px;
+    left: -165px;
+    display: none;
+}
+.cat_sao_img .cat_close{
+    width: 15px;
+    height: 15px;
+    margin: 0 0 5px 0;
+    float: right;
+    background-image: url("../img/pay/shopcart.png");
+    background-position: -7px 80px;
+}
+.cat_sao_img img{
+    width: 150px;
+    height: auto;
+}
+.cat_sao_img p{
+    color:#666;
+    margin-top: 5px;
+}
+/*首页二维码end*/
+
+/*返回顶部*/
+.back-top{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #1AB394;
+    position: fixed;
+    bottom:30px;
+    right: 0;
+    z-index: 100;
+}
+.back-top img{
+    width: 18px;
+    display: block;
+    margin: 12px auto;
+}

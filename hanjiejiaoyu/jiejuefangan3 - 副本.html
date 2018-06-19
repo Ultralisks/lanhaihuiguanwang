@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http:///2018/item-web/sns-pc/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3,user-scalable=no, minimum-scale=0.3, maximum-scale=2.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="./css/global.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/fix.css">
+    <link type="text/css" rel="stylesheet" href="./css/m-webim-lite.css">
+    <link rel="stylesheet" href="./css/lighting-system2.css" type="text/css">
+</head>
+<style type="text/css">
+    @font-face {
+        font-family: 'PingFangSC-Semibold';
+        src: url('./font/pingfang.ttf');
+    }
+    body{font-family: PingFangSC-Semibold;}
+    #footer{background: #2E3136;}
+    #footer .viewport{display: flex;justify-content: space-around;}
+    #footer .viewport ul li{margin-bottom: 5px;}
+    #footer .viewport ul li h5{color: #9CA5AC;font-size: 16px;}
+    #footer .viewport ul li a{color: #9CA5AC;text-decoration:none;out-line: none;font-size: 14px;}
+</style>
+<body class="lighting-body">
+    <div class="an-m-1 lighting-system">
+        <div id="item-header">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <style>
+                .bg-shadows {
+                background: #000;
+                opacity: 0.3;
+                filter: alpha(opacity=30);
+                position: fixed;
+                _position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 999;
+                display: none;
+                }
+
+                .tryoutBox {
+                    width: 450px;
+                    height: 412px;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    margin: -206px 0 0 -225px;
+                    background: #fff;
+                    z-index: 9999;
+                    display: none;
+                    border-radius: 5px;
+                }
+
+                .tryLogo {
+                    display: block;
+                    text-align: center;
+                    padding: 40px 0;
+                    line-height: 40px;
+                    font-size: 36px;
+                    font-weight: bold;
+                    color: #111;
+                }
+
+                .trial-ab-form {
+                    padding: 0 55px;
+                }
+
+                .trial-ab-form .trialBtn {
+                    height: 36px;
+                    margin: 30px 0 57px 0;
+                }
+
+                .trial-ab-form .trialBtn .suBtn {
+                    padding: 0;
+                    background: #398ae6;
+                    border: none;
+                    border-radius: 0;
+                    color: #fff;
+                    font-size: 14px;
+                    margin: 0;
+                    height: 36px;
+                    line-height: 36px;
+                    width: 100%;
+                    box-shadow: 0 0 30px rgba(43, 131, 230, .3);
+                }
+
+                .trial-ab-form li {
+                    padding: 0 0 15px 0;
+                }
+
+                .trial-ab-form li input,
+                .trial-ab-form li select {
+                    height: 34px;
+                    line-height: 34px;
+                    width: 100%;
+                    background: none;
+                    border: none;
+                    border-bottom: solid 1px #398ae6;
+                    color: #7b7c7d;
+                    padding: 0;
+                    font-size: 14px;
+                }
+
+                .trial-ab-form li select {
+                    appearance: none;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    padding-right: 10px;
+                    background: url(../images/arrow.png) no-repeat scroll right center transparent;
+                }
+
+                .reg-try {
+                    height: 30px;
+                    line-height: 30px;
+                    margin-top: 7px;
+                }
+
+                .reg-try a {
+                    color: #398ae6;
+                    font-size: 14px;
+                }
+
+                .reg-try a:hover {
+                    color: #1e73e7;
+                    text-decoration: none;
+                }
+
+                .close-try {
+                    width: 36px;
+                    height: 36px;
+                    position: absolute;
+                    top: -18px;
+                    right: -18px;
+                    display: block;
+                    background: url(../images/close-try.png) no-repeat;
+                    box-shadow: 0 0 4px rgba(0, 0, 0, .16);
+                    border-radius: 50%;
+                }
+            </style>
+            <div class="ic_head_fixed">
+                <div id="header" class="header-bx">
+                    <div class="viewport h-bx-v">
+                        <div class="header">
+                            <div class="header-wrap">
+                                <h1 class="logo"><a href="index.html" title="瀚杰在线教育软件—在线教育整体解决方案提供商"><img src="./images/logo.png" alt="瀚杰在线教育软件—在线教育整体解决方案提供商"></a></h1>
+                                <div class="pc-nav-tel clearfix">
+                                    <div class="nav-menu">
+                                        <ul class="nav-ul" id="nav-ul">
+                                            <li><a href="index.html" title="官网首页" target="_blank">首页</a></li>
+                                            <li class="current">
+                                                <a href="javascript:void(0);" title="产品">产品与解决方案</a>
+                                            </li>
+                                            <li>
+                                                <a href="anli.html" title="案例" target="_blank">案例</a>
+                                            </li>
+                                            <li><a href="chuangxin.html" title="生态合作">创新合作</a></li>
+                                            <li><a href="women.html" title="我们" target="_blank">我们</a></li>
+                                            <!--<li><a href="javascript:void(0);" title="免费试用" target="_blank" style="color: #FFBC42;">免费试用</a></li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ic-sub-nav-bx">
+                    <div class="viewport">
+                        <div class="ic-sub-nav-list" id="ic-sub-nav-list">
+                            <a href="jiejuefangan1.html" target="_blank" data-id="wx-pc/" class="">网校系统</a>
+                            <a href="jiejuefangan2.html" target="_blank" data-id="exam-pc/" class="">考试测评</a>
+                            <a href="jiejuefangan3.html" target="_blank" data-id="sns-pc/" class="current">互动班级</a>
+                            <a href="jiejuefangan4.html" target="_blank" data-id="jw-pc/" class="">排课教务系统</a>
+                            <a href="jiejuefangan5.html" target="_blank" data-id="nxb-pc/" class="">企业培训系统</a>
+                            
+                            <a href="jiejuefangan7.html" target="_blank" data-id="va-pc/" class="">云点播</a>
+                            <a href="jiejuefangan8.html" target="_blank" data-id="fz-pc/" class="">云课堂</a>
+                            <a href="jiejuefangan9.html" target="_blank" data-id="zh-pc/" class="">智慧校园</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="bg-shadows"></div>
+        </div>
+        <div class="main-nav">
+            <div class="main-left pa"></div>
+            <div class="main-nav-text tac c-fff">
+                <h2 class="mb30 text-s">在线教育社交场景</h2>
+                <h1 class="mb30 text-spacing">教育社区</h1>
+                <p class="mb40">讲师/学员/家长多角色互动</p>
+                <a href="javascript:void(0);" target="_blank" class="community-btn c-fff"><span>了解更多</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="an-m-2 lighting-main pr w1000">
+        <div class="lighting-main-text pr tac c-333 product-title">
+            <h1 class="mb50">创新产品</h1>
+            <!--<em class="mb15 lighting-em"></em>-->
+            <p class="mb15 fsize20">我们不仅能超出预期，更能带来惊喜</p>
+        </div>
+        <div class="w1000 pr img clearfix pt60">
+            <ul class="community-image tac clearfix pr lighting-image">
+                <li>
+                    <div class="community-wrap">
+                        <p class="lighting-image-bg lighting-image-bg-1"></p>
+                        <h2 class="f-fM">兴趣小组</h2>
+                        <em class="line"></em>
+                        <div class="tac product-text clearfix">
+                            <span class="pr15">创建小组</span>
+                            <span>加入小组</span>
+                            <span class="pr15">小组公告</span>
+                            <span>组织架构</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="community-wrap">
+                        <p class="lighting-image-bg lighting-image-bg-2"></p>
+                        <h2 class="f-fM">丰富话题</h2>
+                        <em class="line"></em>
+                        <div class="tac product-text clearfix">
+                            <span class="pr15">评论话题</span>
+                            <span>一键分享</span>
+                            <span class="pr15">手动点赞</span>
+                            <span>热门话题</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="community-wrap">
+                        <p class="lighting-image-bg lighting-image-bg-3"></p>
+                        <h2 class="f-fM">精彩活动</h2>
+                        <em class="line"></em>
+                        <div class="tac product-text clearfix">
+                            <span class="pr15" style="width:90px; padding-right:6px;">置顶TOP</span>
+                            <span>本组活动</span>
+                            <span style="padding-right:17px;">活动时间</span>
+                            <span>楼主信息</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="an-m-3 lighting-online tac">
+        <div class="w1000 pr clearfix">
+            <div class="lighting-main-text pr tac c-333 product-title s-screen">
+                <h1 class="mb50">领先不止一步</h1>
+                <!--<em class="mb15 lighting-em"></em>-->
+                <p class="mb15 fsize20">富于挑战，并贯穿每一个环节</p>
+            </div>
+            <ul class="lighting-image pt60 of">
+                <li>
+                    <div class="l-s-wrap">
+                        <div class="screen-box b-rose"></div>
+                        <div class="s-screen-li">
+                            <a href="javascript:void(0);" class="community-image-bg community-image-bg-1"></a>
+                            <h2 class="c-fff">良好用户体验</h2>
+                            <ol class="clearfix">
+                                <li><a href="javascript:void(0);">界面功能友好简洁</a></li>
+                                <li><a href="javascript:void(0);">后台操作简单快捷</a></li>
+                                <li><a href="javascript:void(0);">符合用户使用习惯</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-s-wrap">
+                        <div class="screen-box b-blue"></div>
+                        <div class="s-screen-li">
+                            <a href="javascript:void(0);" class="community-image-bg community-image-bg-2"></a>
+                            <h2 class="c-fff">个性学习空间</h2>
+                            <ol class="clearfix">
+                                <li><a href="javascript:void(0);">建立个性学习空间</a></li>
+                                <li><a href="javascript:void(0);">与学习社区相结合</a></li>
+                                <li><a href="javascript:void(0);">打造智慧生态系统</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-s-wrap">
+                        <div class="screen-box b-yellow"></div>
+                        <div class="s-screen-li">
+                            <a href="javascript:void(0);" class="community-image-bg community-image-bg-3"></a>
+                            <h2 class="c-fff">提升学习趣味</h2>
+                            <ol class="clearfix">
+                                <li><a href="javascript:void(0);">建立线上线下小组</a></li>
+                                <li><a href="javascript:void(0);">寓玩乐于学习之中</a></li>
+                                <li><a href="javascript:void(0);">有效提升学习趣味</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-s-wrap">
+                        <div class="screen-box b-pink"></div>
+                        <div class="s-screen-li">
+                            <a href="javascript:void(0);" class="community-image-bg community-image-bg-4"></a>
+                            <h2 class="c-fff">快速分享引流</h2>
+                            <ol class="clearfix">
+                                <li><a href="javascript:void(0);">一键分享快速引流</a></li>
+                                <li><a href="javascript:void(0);">营销成本大大减少</a></li>
+                                <li><a href="javascript:void(0);">学员分享信任度高</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-s-wrap">
+                        <div class="screen-box b-green"></div>
+                        <div class="s-screen-li">
+                            <a href="javascript:void(0);" class="community-image-bg community-image-bg-5"></a>
+                            <h2 class="c-fff">增加学员粘度</h2>
+                            <ol class="clearfix">
+                                <li><a href="javascript:void(0);">基于兴趣建立小组</a></li>
+                                <li><a href="javascript:void(0);">讨论问题有针对性</a></li>
+                                <li><a href="javascript:void(0);">课程学员粘性增加</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="an-m-4 pr">
+        <div class="w1000 clearfix">
+            <div class="lighting-main-text pr tac c-333 product-title">
+                <h1 class="mb50">多终端互动无碍</h1>
+                <p class="mb15 fsize20">主流终端全覆盖，总有一个是你的挚爱</p>
+            </div>
+            <div class="bc-white pb100">
+                <ol class="an-zd-list">
+                    <li class="an-zd-li-1">
+                        <a href="javascript:void(0);"  title="PC端">
+                            <div class="anzd-pic"></div>
+                            <div class="tac mt30"><span class="an-icc-btn">详细咨询</span></div>
+                        </a>
+                    </li>
+                    <li class="an-zd-li-2">
+                        <a href="javascript:void(0);"  title="微信客户端">
+                            <div class="anzd-pic"></div>
+                            <div class="tac mt30"><span class="an-icc-btn">详细咨询</span></div>
+                        </a>
+                    </li>
+                    <li class="an-zd-li-3">
+                        <a href="javascript:void(0);"  title="APP">
+                            <div class="anzd-pic"></div>
+                            <div class="tac mt30"><span class="an-icc-btn">详细咨询</span></div>
+                        </a>
+                    </li>
+                    <li class="an-zd-li-4">
+                        <a href="javascript:void(0);"  title="PAD">
+                            <div class="anzd-pic"></div>
+                            <div class="tac mt30"><span class="an-icc-btn">详细咨询</span></div>
+                        </a>
+                    </li>
+                </ol>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="client">
+        <div class="w1000">
+            <div class="lighting-main-text pr tac c-333 product-title s-screen">
+                <h1 class="mb50">标杆客户</h1>
+                <p class="mb15 fsize20 client-text"><span class="c-num">30000+</span>定制经验，我们的客户分布在
+                    <br> 医学、金融、企业、职业、会计、高校、司法、K12等等各类领域。
+                </p>
+            </div>
+            <div class="case pt15 of">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank"><img src="./images/case1.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank"><img src="./images/case2.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank"><img src="./images/case3.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank"><img src="./images/case4.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank"><img src="./images/case5.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank"><img src="./images/case6.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank"><img src="./images/case7.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" target="_blank"><img src="./images/case8.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <a href="javascript:void(0);"  class="m-a-btn">点击咨询</a>
+            </div>
+        </div>
+    </div>
+    <!-- footer start -->
+        <footer class="footer " id="footer">
+            <div class="viewport ">
+                <ul>
+                    <li><h5>网站导航</h5></li>
+                    <li><a href="index.html">官网首页</a></li>
+                    <li><a href="anli.html">成功案例</a></li>
+                    <li><a href="chuangxin.html">创新合作</a></li>
+                </ul>
+                <ul>
+                    <li><h5>产品</h5></li>
+                    <li><a href="jiejuefangan1.html">网校系统</a></li>
+                    <li><a href="jiejuefangan2.html">考试测评</a></li>
+                    <li><a href="jiejuefangan3.html">互动班级</a></li>
+                    <li><a href="jiejuefangan4.html">排课教务</a></li>
+                </ul>
+                <ul>
+                    <li><h5>解决方案</h5></li>
+                    <li><a href="jiejuefangan5.html">企业培训</a></li>
+                    <li><a href="jiejuefangan7.html">云点播</a></li>
+                    <li><a href="jiejuefangan8.html">云课堂</a></li>
+                    <li><a href="jiejuefangan9.html">智慧校园</a></li>
+                </ul>
+                <ul>
+                    <li><h5>网站导航</h5></li>
+                    <li><a href="women.html">公司介绍</a></li>
+                    <li><a href="anli.html">合作伙伴</a></li>
+                    <li><a href="javascript:void(0);">联系我们</a></li>
+                </ul>
+            </div>
+            <!-- 360分析-->
+        </footer>
+        <!-- footer end -->
+    <a href="javascript:void(0);" class="we-goTop">&nbsp;</a>
+    <script src="./js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function() {
+        goTop();
+    })
+
+    //goTop
+    function goTop() {
+        var gt = $(".we-goTop");
+        gt.click(function() {
+            $("html,body").animate({ "scrollTop": 0 }, 500);
+        })
+        var gtFun = function() {
+            var sH = $(document).scrollTop();
+            (sH > 280) ? gt.fadeIn(50): gt.fadeOut(50);
+        }
+        $(window).bind("scroll", gtFun);
+    };
+
+    $(".wisdom-try").click(function() {
+        $(".bg-shadows,.tryoutBox").show();
+    });
+    $(".bg-shadows,#close,#close-try").click(function() {
+        $(".bg-shadows,.videoPlay,.tryoutBox").hide();
+    })
+    </script>
+</body>
+
+</html>

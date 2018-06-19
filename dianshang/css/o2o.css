@@ -1,0 +1,189 @@
+.m-l-0{margin-left: 0 !important;}
+.m-b-45{margin-bottom: 45px !important;}
+.m-r-50{margin-right: 50px !important;}
+.c-white{color: #fff !important;}
+.container .title{position: relative;margin-bottom: 15px;font-size: 30px;line-height: 40px;color: #333;text-align: center;}
+/*内容模块*/
+.container-wrap { min-width: 1210px;}
+.container { width: 1136px; padding: 30px 0 ; margin: 0 auto;}
+.container .title { position: relative; margin-bottom: 15px; font-size: 30px; line-height: 40px; color: #333; text-align: center;}
+.container .title span { padding-left: 15px; color: #ff5339;}
+.container .title .title-line { display: block; width: 46px; height: 2px; margin: 20px auto 50px; background: #37a0f5;}
+.container .subtitle { padding: 20px 0 10px; font-size: 24px; line-height: 50px; color: #333; text-align: center;}
+.container .desc { width: 900px; padding-bottom: 50px; margin: 0 auto; font-size: 15px; line-height: 1.8; color: #666; text-align: center;}
+.container ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.container li { float: left; line-height: 24px; text-align: center;}
+.container li .iconfont { display: block; margin: 0 auto 15px;}
+.container li h3 { font-size: 16px; color: #333;}
+.container li p { padding-top: 10px; font-size: 14px; color: #72767a;}
+.container .btn-box { padding-top: 30px; text-align: center;}
+.container .btn { display: inline-block; padding: 12px 50px; font-size: 16px; color: #666; border: 1px solid #bbc0ce; border-radius: 3px; -webkit-transition: all .3s; -moz-transition: all .3s; -o-transition: all .3s; transition: all .3s;}
+.container .btn:hover { color: #fff; background: #2ea7e0; border-color: #2ea7e0;}
+.container .btn-primary { color: #fff; background: #2ea7e0; border: 1px solid #2ea7e0;}
+.container .notice { color: #82939e;}
+
+/*引领全新商业模式，助力销售业绩腾飞*/
+.module1{text-align: center;}
+.module1 ul li { width: 220px; overflow: hidden; border-radius: 8px;}
+.module1 ul li h3 { font-size: 20px; line-height: 60px; color: #fff; background: #37a0f5;}
+.module1 ul li h3.special { background: #70b7f3;}
+.module1 ul li p { height: 130px; padding: 25px 25px 0; font-size: 12px; line-height: 20px; background: #e9f0ff; border: 1px solid #afd7fa; border-top: 0; border-radius: 0 0 8px 8px;}
+.module1 ul li.icon { width: 85px; height: 216px; line-height: 216px;}
+.module1 ul li.icon .iconfont { font-size: 40px; color: #37a0f5;}
+.module1 img { width: 920px; margin: 16px auto 20px;}
+.module1 dl { width: 570px; height: 80px; margin: 0 auto; color: #fff; overflow: hidden; background: #70b7f3; border-radius: 8px;}
+.module1 dl dt { width: 220px; font-size: 20px; line-height: 80px; text-align: center; background: #37a0f5;}
+.module1 dl dd { width: 350px; padding: 20px 30px 0; font-size: 14px; line-height: 20px;}
+
+/*多模式线上商城*/
+.module2 { height: 525px; background: url(../images/module2-bg.png) no-repeat center top;}
+.module2 dl { height: 366px; color: #fff; background: url(../images/module2.png) no-repeat center top;}
+.module2 dl dt, .module2 dl dd { float: left;}
+.module2 dl dt { width: 412px; height: 371px; padding: 45px 40px 0;}
+.module2 dl dt .iconfont { font-size: 50px; color: #37a0f5;}
+.module2 dl dt h3 { padding: 25px 0 32px 5px; font-size: 24px;}
+.module2 dl dt h4 { padding: 0 0 15px 5px; font-size: 20px; opacity: .55; filter: alpha(opacity=55);}
+.module2 dl dt p { padding-left: 5px; font-size: 13px; line-height: 24px; opacity: .55; filter: alpha(opacity=55);}
+.module2 dl dd { width: 241px; height: 183px; padding-top: 33px; text-align: center; cursor: pointer;}
+.module2 dl dd .iconfont { display: block; height: 60px; font-size: 45px; transition: all .3s;}
+.module2 dl dd h3 { font-size: 16px; line-height: 24px;}
+.module2 dl dd.first { height: 183px; padding-top: 38px; background: #41b5e6;}
+.module2 dl dd.first img { display: block; width: 185px; margin: 0 auto 12px;}
+.module2 dl dd:hover .iconfont { color: #41b5e6;}
+
+/*挖掘本地市场，形成商业闭环*/
+.module3-text { width: 465px; margin: 80px 65px 0 0;}
+.module3-text h3 { padding-bottom: 10px; font-size: 20px; color: #e65d22;}
+.module3-text p { font-size: 14px; line-height: 30px; color: #72767a;}
+
+/*O2O行业解决方案*/
+.module5-tab { height: 140px; padding-top: 20px; margin-bottom: 50px; border-bottom: 1px solid #d4d4d4;}
+.module5-tab li { float: left; width: 189px; padding: 20px 0; text-align: center; cursor: pointer;}
+.module5-tab li, .module5-tab li a { color: #7d8287;}
+.module5-tab li .iconfont { margin-bottom: 0 !important; font-size: 40px; line-height: 55px;}
+.module5-tab li span { font-size: 14px;}
+.module5-tab li.active, .module5-tab li.active a, .module5-tab li a:hover { color: #41b5e6;}
+.module5-tab li.active { border-bottom: 2px solid;}
+.module5-item { position: relative;}
+.module5-item img { width: 1132px;}
+.module5-item .module5-tip { position: absolute;}
+.module5-item .module5-tip .tip-icon { width: 50px; height: 50px; cursor: pointer;}
+.module5-item .module5-tip .tip-text { position: absolute; top: -21px; left: 70px; width: 272px; padding: 15px 15px 22px; line-height: 1.6; color: #fff; border-radius: 5px; opacity: 0; filter: alpha(opacity=0); transform: translateX(10px); transition: all .4s;}
+.module5-item .module5-tip .tip-text:before { content: ''; position: absolute; top: 35px; left: -26px; border-width: 10px 14px; border-style: solid; border-color: transparent #fff transparent transparent;}
+.module5-item .module5-tip .tip-text.orange { background: #ffa015;}
+.module5-item .module5-tip .tip-text.orange:before { border-color: transparent #ffa015 transparent transparent;}
+.module5-item .module5-tip .tip-text.blue { background: #289eff;}
+.module5-item .module5-tip .tip-text.blue:before { border-color: transparent #289eff transparent transparent;}
+.module5-item .module5-tip .tip-text h3 { padding-bottom: 5px; font-size: 14px;}
+.module5-item .module5-tip .tip-text p { font-size: 12px;}
+.module5-item .module5-tip1 { top: 142px; left: 639px;}
+.module5-item .module5-tip2 { top: 262px; left: 266px;}
+.module5-item .module5-tip3 { top: 392px; left: 328px;}
+.module5-item .module5-tip4 { top: 132px; left: 679px;}
+.module5-item .module5-tip5 { top: 336px; left: 394px;}
+.module5-item .module5-tip2 .tip-icon, .module5-item .module5-tip3 .tip-icon { width: 65px; height: 68px;}
+.module5-item .module5-tip2 .tip-text, .module5-item .module5-tip3 .tip-text, .module5-item .module5-tip5 .tip-text { top: -12px; left: 90px;}
+.module5-item .module5-tip4 .tip-icon { width: 70px; height: 35px;}
+.module5-item .module5-tip4 .tip-text { top: -28px; left: 90px;}
+.module5-item .module5-tip5 .tip-icon { width: 70px; height: 70px;}
+.module5-item .module5-tip .tip-icon:hover + .tip-text { opacity: 1; filter: alpha(opacity=100); transform: translateX(0);}
+
+/*O2O系统 重点功能场景应用*/
+.module6 { background: url(../images/module6-bg.png) no-repeat center center;}
+.module6-tab li { float: none; display: block; width: 186px; height: 102px; padding: 20px 0; margin: 0 auto; font-size: 14px; color: #fff; cursor: pointer; background: #000; background: rgba(255,255,255,.1);}
+.module6-tab li .iconfont { margin-bottom: 0; font-size: 38px; line-height: 1;}
+.module6-tab li.active { background: #2094ed;}
+.module6-item { color: #fff; overflow: hidden;}
+.module6-item .module6-text { float: right;}
+.module6-item .module6-text.w310 { width: 310px;}
+.module6-item .module6-text.w580 { width: 580px;}
+.module6-item h3 { padding: 25px 0 20px 5px; font-size: 22px; line-height: 35px;}
+.module6-item h3 span { font-size: 16px; vertical-align: bottom;}
+.module6-item li { width: 100%; padding: 8px 0; font-size: 14px; color: #ccc; color: rgba(255,255,255,.8); text-align: left;}
+.module6-item li.col-2 { width: 50%;}
+.module6-item li.col-4 { width: 25%;}
+.module6-item li .iconfont { display: inline; margin: 0 3px 0 0; font-size: 20px; color: #828486;}
+
+/*新零售是精细化运营的零售*/
+.module7-1 .module7-img { width: 495px; height: 285px;}
+.module7-1 .module7-img img { width: 495px; border-radius: 8px; box-shadow: 0 0 22px rgba(0,0,0,.1);}
+.module7-2 .module7-text { padding-top: 60px !important;}
+.module7-2 .module7-img img { width: 600px;}
+.module7-2 .module7-img .img { position: relative; z-index: 1;}
+.module7-2 .module7-img .img dl { position: absolute; right: 0; bottom: 25px; left: 0; color: #aaa; text-align: center;}
+.module7-2 .module7-img .img dl dt { float: left; width: 160px;}
+.module7-2 .module7-img .img dl dd { float: right; width: 320px;}
+.module7 .module7-text { width: 480px; padding-top: 5px;}
+.module7 .module7-text h3 { padding-bottom: 15px; font-size: 18px; color: #333;}
+.module7 .module7-text p { margin-bottom: 25px; line-height: 22px;}
+.module7 .module7-tab span { float: left; width: 100px; height: 32px; margin: 24px 0 0 24px; line-height: 30px; color: #aaa; text-align: center; cursor: pointer; border: 1px solid #aaa; border-radius: 2px;}
+.module7 .module7-tab span.active { color: #fff; background: #3dbaf7; border-color: #3dbaf7;}
+
+/*丰富的营销功能，帮助您快速铺开市场*/
+.module8 { background: url(../images/module8-bg.png) no-repeat center top;}
+.module8 ul { position: relative; height: 332px; margin-top: 65px;}
+.module8 .name { position: absolute; display: block; width: 94px; height: 94px; padding: 7px; background: #1d568c; background: rgba(48,123,190,.5); border-radius: 50%;}
+.module8 .name i { display: block; width: 80px; height: 48px; padding: 16px 0; font-size: 20px; color: #fff; background: #2e7bbe; border-radius: 50%;}
+.module8 p { position: absolute; padding: 6px 8px 6px 12px !important; font-size: 14px; color: #fff !important; text-align: left;}
+.module8 p i { position: absolute; display: block; width: 10px; height: 10px;}
+.module8 p i.before { top: 0; left: 0; border-top: 2px solid #2d7dc3; border-left: 2px solid #2d7dc3;}
+.module8 p i.after { right: 0; bottom: 0px; border-right: 2px solid #2d7dc3; border-bottom: 2px solid #2d7dc3;}
+.module8 .line { position: absolute; display: block; background: url(../images/module8.png) no-repeat;}
+.module8 .module8-1 .name { top: 10px; left: 405px;}
+.module8 .module8-2 .name { top: 30px; right: 388px;}
+.module8 .module8-3 .name { top: 210px; left: 378px;}
+.module8 .module8-4 .name { top: 247px; right: 410px;}
+.module8 .module8-1 p { top: 17px; left: 127px; width: 240px;}
+.module8 .module8-1 .line { top: 70px; left: 125px; width: 302px; height: 42px; background-position: -122px 1px;}
+.module8 .module8-2 p { top: 50px; right: 65px; width: 270px;}
+.module8 .module8-2 .line { top: 93px; right: 60px; width: 356px; height: 42px; background-position: -715px -22px;}
+.module8 .module8-3 p { top: 175px; left: 35px; width: 285px;}
+.module8 .module8-3 .line { top: 225px; left: 5px; width: 394px; height: 42px; background-position: 0 -154px;}
+.module8 .module8-4 p { top: 185px; right: 36px; width: 320px;}
+.module8 .module8-4 .line { top: 260px; right: 10px; width: 415px; height: 42px; background-position: -703px -188px;}
+
+/*电商O2O商业模式 多种盈利模式*/
+.module9 li { width: 362px; height: 150px; padding: 25px; margin: 0 0 21px 21px; text-align: left !important; background: #fff; border: 1px solid #d7d7d7; border-radius: 8px; transition: all .2s;}
+.module9 li.last { width: 747px;}
+.module9 li h3 { padding-bottom: 5px; font-size: 20px;}
+.module9 li p { color: #72767a;}
+.module9 li:hover { background: #e1faff; border-color: #9ad4fc;}
+
+/*为何选择蓝海汇*/
+.module10 li { width: 278px; height: 214px; margin-left: 8px; overflow: hidden; background: url(../images/module9.png) no-repeat; border-radius: 8px;}
+.module10 li.module10-1 { background-position: -290px -4px;}
+.module10 li.module10-2 { background-position: -4px -4px;}
+.module10 li.module10-3 { background-position: -576px -4px;}
+.module10 li.module10-4 { background-position: -862px -4px;}
+.module10 li a { display: block; height: 214px; padding: 50px 25px 0; background: rgba(0,0,0,.6); border-radius: 8px; opacity: 0; filter: alpha(opacity=0); transition: all .5s;}
+.module10 li h3 { position: relative; z-index: 1; font-size: 20px; color: #fff;}
+.module10 li h3:before, .module10 li h3:after { content: ''; position: absolute; top: 14px; display: block; width: 50px; height: 1px; background: #888d91;}
+.module10 li h3:before { left: 9px;}
+.module10 li h3:after { right: 9px;}
+.module10 li p { font-size: 12px; color: #fff;}
+.module10 li.module10-4 h3:before, .module10 li h3:after { width: 60px;}
+.module10 li:hover a { opacity: 1; filter: alpha(opacity=100);}
+
+
+@media (max-width: 992px){
+	.little{display: none;}
+	.container,.container-wrap{width: 100%;min-width: 0;}
+	.module1 ul{padding-left: 5%}
+	.module1 ul li{width: 90%;margin: 0 auto 10px;}
+	.module3 .p-t-60 img{width: 100%;}
+	.module5-item img{width: 100%;}
+	.module5-tab li{width: 100px;box-sizing: border-box;height: 119px;}
+	.module7 .module7-img{width: 100%;}
+	.module7 .module7-text{width: 100%;text-align: center;padding: 0 10px;}
+	.module7 .module7-tab{padding: 0 20px;}
+	.module7 .module7-tab span{margin-left: 0;margin-right: 20px;}
+	.module7-1 .module7-img img{width: 100%;}
+	.module7-2 .module7-img img{width: 100%;}
+	.module9 ul{width: 100%;padding: 0 20px;}
+	.module9 li{margin: 10px auto;width: 95%;height: auto;}
+	.module9 li.last{width: 95%;}
+	.module10{padding-left:10px;}
+	.module10 li{margin-left:0;margin-bottom: 10px;}
+	.container .desc{width: 100%;}
+	.m-r-50{margin-right: 20px !important;}
+}

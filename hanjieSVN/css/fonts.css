@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'mynum';
+	src: url('fonts/unisansthin.eot');
+	src: local('☺'), url('fonts/unisansthin.woff') format('woff'), url('fonts/unisansthin.ttf') format('truetype'), url('fonts/unisansthin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;	   
+}
+i.num{
+  color: #333;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "mynum";
+}

@@ -1,0 +1,913 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+	<meta name="description" content="蓝海汇科技_中国最大的IT解决方案与服务提供商_主营：软件开发_App开发_微信开发_智慧城市_解决方案"/>
+	<meta name="keywords" content="蓝海汇科技_中国最大的IT解决方案与服务提供商_主营：软件开发_App开发_微信开发_智慧城市_解决方案"/>
+	<title>蓝海汇网络科技有限公司</title>
+	<link rel="Shortcut Icon" href="images/favicon.ico"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link href="css/font-awesome.min.css" rel="stylesheet" media="all">
+	<link href="css/animate.min.css" rel="stylesheet" media="all">
+	<!-- Bootstrap bootstrap-touch-slider Slider Main Style Sheet -->
+	<link href="css/bootstrap-touch-slider.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="css/jquery.bxslider.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/media.css"/>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/home.min.js"></script>
+	<script src="js/public.js"></script>
+	<!-- 自定义样式 -->
+	<link rel="stylesheet" href="css/solution-style.css"/>
+	<script src="js/PicCarousel.js"></script>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?330cfe6c4ad2dbeee1c5e7999ef1a72d";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+</head>
+<style>
+	button{
+		outline: none;
+	}
+	.fl{float:left;}
+	.fr{float:right;}
+	.clearboth:after{content:"";height:0;line-height:0;display:block;visibility:hidden;clear:both;}
+	.main3 ul li .cont p, .main5 ul li .cont p{min-height:80px;}
+	/* .main2 ul li{width:20%;}
+	.main2 ul li div span{display: inline-block;}
+	.main2{background:#fff;}
+	.main4{padding:40px 0;}
+	.main4 ul li{padding:0 20px;}
+	.main4 ul li .cont .c-text{margin-bottom: 10px;} */
+	/* .main5 ul li{padding:0 20px;}
+	.main5 ul li .cont{background-color:rgba(255,255,255,0.2);padding:40px 20px;}
+	.main5 ul li .cont .text{margin-top:20px;margin-bottom:20px;} */
+	.service ul li div{background-repeat: no-repeat; background-size: cover;}
+	.solution .banners h1{max-width:60%;}
+	.fle{display:flex;justify-content:center;flex-wrap:wrap;}
+	.team .conts-team .photo ol{width:3600px;}
+	.more{ border: 1px solid #999;border-radius: 30px;color: #333;padding: 7px 20px;background-color: #fff;margin-top: 10px;}
+
+	.main2 ul, .main3 ul, .advantage .cont, .service ul, .team .cont, .main4 ul, .main5 ul, .main6 ul, .cooperation ul{margin-top:30px;}
+	.main2 ul li span:first-child{font-size:20px;font-weight:700;}
+
+	.solution h1, .solution h2{margin-bottom:15px;}
+	.solution h2{font-size:2.2rem;}
+	.solution .banners button{background:#f00;}
+	
+	.wire{width:140px;border-bottom:1px solid #ccc;padding-top:16px;}
+	.main2{background:#fff;}
+	.main2 .over-hide{width:1200px;margin:0 auto;}
+	.main2 .over-hide li{width:300px;height:350px;display:flex;flex-direction:column;justify-content:space-around;padding:12px;}
+	.main2 .over-hide li .mhc{font-size:16px;min-height:60px; height: 130px; overflow: hidden;}
+	.main2 .over-hide li img{margin-top:15px;transform: scale(1.2);}
+	.main2 ul li span{color:#fff;}
+	.main2 .over-hide li a button{color:#0098E3;border:1px solid #fff;background:#fff;}
+	.main4{padding-bottom: 20px;}
+	.main4 .chanpin{width:1200px;margin:0 auto;}
+	.main4 .chanpin li{width:20%;height:200px;border-right:1px solid #ccc;padding:15px;float:left;}
+	.main4 .chanpin li>p{
+		max-height: 60px;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+	}
+	@media screen and (min-width: 1000px) {		
+		.main4 .chanpin li:nth-child(1),
+		.main4 .chanpin li:nth-child(2),
+		.main4 .chanpin li:nth-child(3),
+		.main4 .chanpin li:nth-child(4){
+			margin-bottom: 40px;
+		}
+	
+		.main4 .chanpin li:nth-child(5){
+			border-right: 0;
+		}
+	}
+	
+	.main4 .chanpin li:last-child{border-right:0;}
+	.main4 .chanpin li img{width:130px;height:80px;padding:0 25px;}
+	.main4 .chanpin li h5{font-weight:700;padding:10px 0;font-size:16px;}
+	.main4 .chanpin li span{font-size:12px;}
+	.main5 .hangye{width:1000px;margin:0 auto;background:rgba(255, 108, 65, 0.051);display:flex;flex-wrap:wrap;justify-content:center;}
+	.main5 .hangye li{width:200px;padding:20px 60px;height:150px;}
+	.main5 .hangye li img{width:80px;height:80px;}
+	.main5 .hangye li p{text-align:center;font-size:12px;margin-top:15px;}
+	.service .over-hide li div{height:200px;}
+	.team .line, .cooperation .line{background-color:rgba(255, 84, 32, 1);}
+
+	.main .more{color:#333;font-size:16px;margin-top:30px;}
+	.main .more:hover{color:#009be1}
+	.dianshang{background:rgba(242, 242, 242, 1);margin-bottom:20px;display:flex;justify-content:center;align-items:center;text-align:left;padding:4rem 15px;flex-wrap:wrap;}
+	.dianshang .ds-l{margin:0 10% 0 3%;}
+	.dianshang .ds-l ul{ margin-top: 20px;}
+	.dianshang .ds-r{margin:0 3% 0 10%;}
+	.dianshang h2{font-size:20px;margin-bottom:0;}
+	.dianshang h3{font-size:16px;font-weight:700; margin-top: 17px; margin-bottom: 0px;}
+	.dianshang .computer{height:350px;}
+	.dianshang ul li{margin-bottom:20px;}
+	.dianshang ul li img{width:50px;height:50px;margin-right:20px;}
+
+	
+
+	@media (max-width: 1600px){
+		.team .conts-team .photo ol{width:3300px;}
+		.team .conts-team .photo ol li{width:290px;}
+	}
+	@media (max-width: 1400px){
+	}
+	@media (max-width: 1200px){
+		.dianshang .ds-l,.dianshang .ds-r{margin:0;}
+		.solution .banners h1{font-size:28px;}
+		.main2 .over-hide{width:600px;}
+	}
+	@media (max-width: 1000px){
+		.main5 ul li{padding:0 5px;}
+		.main2 ul li div span{min-height:70px; }
+		.main4 .chanpin{width:500px;}
+		.main4 .chanpin li:nth-child(2n){border-right:0;}
+		.main4 ul li{margin-bottom:10px;}
+		.main5 ul li{margin-bottom: 10px;}
+		.main5 .hangye{width:600px;}
+		.service .over-hide li div{height:150px;}
+	}
+	@media (max-width: 800px){
+		.fle li{min-width:180px;}
+		.main2 .over-hide{width:600px;margin:0 auto;}
+		.main2 .over-hide li{width:300px;}
+		.main5 ul li .cont{padding:20px 15px;min-height:360px; }
+		.main5 ul li .cont h4{font-size:14px;}
+	}
+	@media (max-width: 600px){
+		.solution .banners h1{font-size:18px;}
+		.main3 ul li .cont p, .main5 ul li .cont p{min-height:120px;}
+		.wire{display:none}
+		.wire-c{width:100%;text-align:center;}
+		.main2 .over-hide{width:400px;}
+		.main2 .over-hide li{width:200px;}
+		.main4 .chanpin{width:320px;}
+		.main4 .chanpin li{width:160px;padding:15px 5px;}
+		.main4 .chanpin li:nth-child(3n){border-right:1px solid #ccc;}
+		.main4 .chanpin li:nth-child(even){border-right:0;}
+		.main5 .hangye{width:320px;}
+		.main5 .hangye li{width:160px;padding:20px 40px;}
+		.main .pos-rel img{min-height:150px;}
+		.dianshang .ds-l{}
+		.ds-l .fl{
+			max-width: 79%;
+		}
+	}
+	@media (max-width: 400px){
+		.fle li{min-width:150px;}
+		.main3 ul li .cont p, .main5 ul li .cont p{min-height:150px;}
+		.main2 .over-hide{width:250px;margin:0 auto;}
+		.main2 .over-hide li{width:250px;}
+		.ds-l .fl{
+			max-width: 70%;
+		}
+
+	}
+</style>
+
+<body class="index">
+<div class="container-fluid">
+	<div class="row">
+		<!--pc端导航开始-->
+		<header class="pc_header">
+			<div class="navigation_box">
+				<div class="i_box">
+					<p class="logo"><img src="images/logo_mes_pass.png" /></p>
+					<div class="tabnanvlist indus p_server">
+						<div class="ternnavlist ind_pro">
+							<a href="index.html">首页</a>
+							<a class="erp">ERP<b></b></a>
+							<a class="mes">MES<b></b></a>
+							<a class="wms">WMS<b></b></a>
+							<a class="pro_title">产品<b></b></a>
+							<a href="anli_jingdian.html">客户案例</a>
+							<a href="chuangxinhezuo.html">合作</a>
+							<a href="about.html">关于我们</a>
+						</div>
+					</div>
+					<p class="tele"><img src="images/phone.png" /></p>
+				</div>
+			</div>
+			<!--ERP-->
+			<div class="second_nav erp_c">
+				<a href="erp_saas.html">珊瑚云 SaaS</a>
+				<a href="erp_paas.html">蓝智云 Paas</a>
+			</div>
+			<!--MES-->
+			<div class="second_nav mes_c">
+				<a href="mes_pass.html">亿联云 Paas</a>
+			</div>
+			<!--WMS-->
+			<div class="second_nav wms_c">
+				<a href="wms_saas.html">尚杰云 SaaS</a>
+				<a href="wms_paas.html">盒子云 Paas</a>
+			</div>
+			<!--产品-->
+			<div class="second_nav product">
+				<a href="chanpin_aps.html">蓝脑通 APS</a>
+				<a href="chanpin_oms.html">蜂鸟云 OMS</a>
+				<a href="chanpin_plm.html">蓝海汇 PLM</a>
+			</div>
+			<!--企业信息化結束-->
+			<!--工业信息化开始-->
+			<!-- <div class="second_nav scheme_c">
+				<a href="solution/ERP.html">ERP进销存管理系统</a>
+				<a href="solution/systemDevel.html">MES生产自动执行系统</a>
+				<a href="solution/warehouse.html">WMS仓库管理系统</a>
+			</div> -->
+			<!--工业信息化結束-->
+		</header>
+		<!--pc端导航结束	-->
+		<div class="move_box">
+			<p class="m_logo"><img src="images/logo.png" /></p>
+			<p class="telephone"><img src="images/phone.png" /></p>
+			<p class="r_icon"></p>
+		</div>
+		<div class="m_list">
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="index.html">首页</a>
+						</h4>
+						<!--			<b class="close"><img src="images/top_nav_close.png"/></b>-->
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a  data-toggle="collapse" data-parent="#accordion"  href="#collapseOne">ERP</a>
+						</h4>
+						<b><img src="images/arrow_down2.png"/></b>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse">
+						<div class="panel-body">
+							<ul>
+								<li><a href="erp_saas.html">珊瑚云 SaaS</a></li>
+<li><a href="erp_paas.html">蓝智云 Paas</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion"  href="#collapseTwo">MES</a>
+						</h4>
+						<b><img src="images/arrow_down2.png"/></b>
+					</div> <div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<ul>
+								<li><a href="mes_pass.html">亿联云 Paas</a></li>
+							</ul>
+						</div>
+					</div> 
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion"  href="#collapseThree">WMS</a>
+						</h4>
+						<b><img src="images/arrow_down2.png"/></b>
+					</div>
+					 <div id="collapseThree" class="panel-collapse collapse">
+						<div class="panel-body">
+							<ul>
+								<li><a href="wms_saas.html">尚杰云 SaaS</a></li>
+								<li><a href="wms_paas.html">盒子云 Paas</a></li>
+							</ul>
+						</div>
+					</div> 
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion"  href="#collapseFive">产品</a>
+						</h4>
+						<b><img src="images/arrow_down2.png"/></b>
+					</div>
+					<div id="collapseFive" class="panel-collapse collapse">
+						<div class="panel-body">
+							<ul>
+								<li><a href="chanpin_aps.html">蓝脑通 APS</a></li>
+								<li><a href="chanpin_oms.html">蜂鸟云 OMS</a></li>
+								<li><a href="chanpin_plm.html">蓝海汇 PLM</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="anli_jingdian.html">客户案例</a>
+						</h4>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a  href="chuangxinhezuo.html">合作</a>
+						</h4>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a  href="about.html">关于我们</a>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- start  bootstrap-touch-slider Slider -->
+
+
+<!-- 页面可编辑区域 -->
+<div class="main solution">
+	<!-- banner-->
+	<div class="pos-rel">
+		<img class="w-perCent100" src="images/banner_mes_pass.jpg" alt=""  class="slide-image"/>
+<!--
+		<div class="banners pos-abs">
+			<h1>亿联云MES</h1>
+			<h2>
+				智能新时代，工业新未来
+			</h2>
+			<a href="javascript:void(0)" target="_blank"
+			   onclick="hz6d_is_exist('setIsinvited()%3Bwindow.open(#liyc#https%3A%2F%2Fwww6.53kf.com%2FwebCompany.php%3Farg%3D10120886%26style%3D2%26language%3Dzh-cn%26charset%3DGBK%26kflist%3Doff%26kf%3Dhuayang%40lanhaihui.net%26zdkf_type%3D1%26referer%3Dhttp%253A%252F%252Fmes.lanhaihui.net%252Fsolution%252FsystemDevel.html%26keyword%3D%26tfrom%3D1%26tpl%3Dcrystal_blue%26uid%3Dd568953531a4ede9c942dd4a6e9837bf#liyc#%2C%20#liyc#_blank#liyc#%2C%20#liyc#height%3D600%2Cwidth%3D800%2Ctop%3D50%2Cleft%3D200%2Cstatus%3Dyes%2Ctoolbar%3Dno%2Cmenubar%3Dno%2Cresizable%3Dyes%2Cscrollbars%3Dno%2Clocation%3Dno%2Ctitlebar%3Dno#liyc#)');">
+				<button>
+					了解详情
+				</button>
+			</a>
+
+		</div>
+-->
+		
+		<div class="slide-text slide_style_center">
+			<h1 class="small-text" data-animation="animated flipInX " style="font-size: 25px;width: 100%;line-height: 25px;">
+
+			</h1>
+			<h1 data-animation="animated zoomInLeft">亿联云MES</h1>
+			<p data-animation="animated fadeInRight">智能新时代，工业新未来</p>
+			<!--<a href="#" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>-->
+			<a href="honor.html"  class="btn btn-danger" data-animation="animated fadeInRight">了解详情</a>
+		</div>
+	</div>
+	<!-- banner结束-->
+	<!-- 数字信息开始-->
+	<div class="points_box">
+	<div class="points">
+		<ul>
+			<li>
+				<img src="images/icon-point-1.92c56528.png">
+				&nbsp;&nbsp;快速安装 
+			</li>
+			<li>
+				<img src="images/icon-point-2.0cbabec8.png">
+				&nbsp;&nbsp;稳定安全
+			</li>
+			<li>
+				<img src="images/icon-point-3.3a8e473a.png">
+				&nbsp;&nbsp;性价比高
+			</li>
+			<li>
+				<img src="images/icon-point-4.6915a13a.png">
+				&nbsp;&nbsp;数据分析
+			</li>
+		</ul>
+	</div>	
+	</div>
+	<!-- 数字信息结束-->
+	<div class="choices_box">
+	<h1>我们的优势</h1>
+	<ul id="da-thumbs" class="da-thumbs da-pass">
+
+	    <li>
+		  <span class="choice-wrapper">
+			  <img src="images/mes_pass_1.png">
+			  <h1 class="desc">企业级成熟产品</h1>
+			  <div class="hot_info">
+				  <h2 title="">蓝海汇MES系统广泛在金融、能源、交通、政务、运营商等多领域进行规模商用，历经多行业、多场景的生产环境验证，产品成熟度、稳定性高，能够较好服务企业建设企业级容器平台的需求</h2>
+			  </div>
+		  </span>  
+		</li>
+
+		<li>
+			<span class="choice-wrapper">
+				<img src="images/mes_pass_2.png">
+				<h1 class="desc">提供应用端到端管理方案</h1>
+				<div class="hot_info">
+					<h2 title="">为更好服务企业应用互联网架构转型的需要，BOC针对应用全生命周期管理提供了端到端解决方案，具体包括应用持续集成、应用持续部署、中间件管理、微服务治理、开发框架管理、应用运维等，满足企业建设DevOps的多场景需要</h2>
+				</div>
+			</span> 
+		</li>
+
+		<li>
+			<span class="choice-wrapper">
+				<img src="images/mes_pass_3.png">
+				<h1 class="desc">敏捷-快速迭代</h1>
+				<div class="hot_info">
+					<h2 title="">通过平台可以屏蔽硬件和软件运行环境的复杂性，降低应用的开发和部署难度快速实现基于应用和依赖，企业应用管理类用户只需要关注应用本身的管理和维护</h2>
+				</div>
+			</span> 
+		</li>
+
+		<li>
+			<span class="choice-wrapper">
+				<img src="images/mes_pass_4.png">
+				<h1 class="desc">一体化监控&运维</h1>
+				<div class="hot_info">
+					<h2 title="">对资源\系统\应用进行可视化监测、预警和报警。对应用运行进行智能调度，对运维故障进行自动处理，保障业务的高可用</h2>
+				</div>
+			</span> 
+		</li>
+
+	</ul>
+</div>
+	
+	<div class="dianshang align-c">
+		<div class="ds-l">
+			<h1>想对需要蓝海汇MES的您说</h1>
+			<h3>蓝海汇MES系统研发定制有以下功能</h3>
+			<ul>
+				<li class="clearboth">
+					<img class="fl" src="images/icon_quanmianpingmianhua.png" />
+					<div class="fl">
+						<h3>强大的数据采集引擎</h3>
+					</div>
+				</li>
+				<li class="clearboth">
+					<img class="fl" src="images/icon_quanmianshejiaohua.png" />
+					<div class="fl">
+						<h3>打造工厂生产管理系统数据采集基础平台</h3>
+					</div>
+				</li>
+				<li class="clearboth">
+					<img class="fl" src="images/icon_quanmianyunduanhua.png" />
+					<div class="fl">
+						<h3>先进的RFID、条码与移动计算技术 </h3>
+					</div>
+				</li>
+				<li class="clearboth">
+					<img class="fl" src="images/icon_yidongquanmianhua.png" />
+					<div class="fl">
+						<h3>全面完整的产品功能追踪追溯功能 </h3>
+					</div>
+				</li>
+				<li class="clearboth">
+					<img class="fl" src="images/icon_nuzhongchanpinleixing.png" />
+					<div class="fl">
+						<h3>生产WIP状况监视  </h3>
+					</div>
+				</li>
+				<li class="clearboth">
+					<img class="fl" src="images/icon_muleixinggongyingshang.png" />
+					<div class="fl">
+						<h3>实时全面准确的性能与品质分析SPC  </h3>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="ds-r">
+			<img class="computer" src="images/computer.png" />
+		</div>
+	</div>
+	<!-- 领域结束-->
+<div class="industry">
+	<h1>我们的客户覆盖<label>七</label>大行业</h1>
+	<h2>您的问题我们听的懂</h2>
+	<div class="grid_box">
+	<div class="g_list">
+		<div class="i_nail" style="position: absolute; left: 0px; top: 0px;">
+			<img src="images/img-trade1.jpg"/>
+			<div class="title ng-binding">服装</div>
+		</div>
+		<div class="i_nail" style="position: absolute; left: 306px; top: 0px;">
+			<img src="images/img-trade2.jpg"/>
+			<div class="title ng-binding">生产制造</div>
+		</div>
+		<div class="i_nail" style="position: absolute; left: 612px; top: 0px;">
+			<img src="images/img-trade3.jpg"/>
+			<div class="title ng-binding">电商</div>
+		</div>
+		<div class="i_nail" style="position: absolute; left: 920px; top: 0px;">
+			<img src="images/img-trade4.jpg"/>
+			<div class="title ng-binding">三方物流</div>
+		</div>
+		<div class="i_nail" style="position: absolute; left: 0px; top: 215px;">
+			<img src="images/img-trade5.jpg"/>
+			<div class="title ng-binding">医药</div>
+		</div>
+		<div class="i_nail" style="position: absolute; left: 306px; top: 215px;">
+			<img src="images/img-trade6.jpg"/>
+			<div class="title ng-binding">冷链</div>
+		</div>
+		<div class="i_nail" style="position: absolute; left: 612px; top: 215px;">
+			<img src="images/img-trade7.jpg"/>
+			<div class="title ng-binding">零售</div>
+		</div>
+		<div class="i_nail" style="position: absolute; left: 920px; top: 215px;">
+			<img src="images/img-trade8.jpg"/>
+			<div class="title ng-binding">了解更多</div>
+		</div>
+	</div>	
+	</div>
+</div>
+<div class="scene">
+	<div class="s_left"><img class="scene-arch-img view-img" alt="" src="images/scene-arch-img_1.svg"></div>
+	<div class="s_right">
+		<div class="scene-sub-box">
+			<p class="caption">应用云上托管</p>
+			<p class="info">提供云上自动部署和运维能力，解决手工部署效率低、错误率高、升级困难、业务中断、监控定位难等应用运维问题，适用于政企IT系统及互联网类应用 </p>
+		</div>
+		<div class="scene-sub-box ">
+        <p class="caption">优势</p> 
+        <ul class="scene-advantage-list"> 
+         <li><p class="caption">自动化部署 </p><p class="info">通过模板化、可视化的应用编排，实现一键式自动部署 </p> </li> 
+         <li><p class="caption">不断服升级 </p><p class="info">提供滚动升级/灰度升级能力，保障业务升级不中断 </p> </li> 
+         <li><p class="caption">自动化运维 </p><p class="info">提供应用拓扑、监控、告警、日志、调用链等能力 </p> </li> 
+        </ul> 
+       </div>
+       <div class="scene-sub-box ">
+        <p class="caption">建议搭配使用</p>
+        <div class="ecs">
+        	<span><img src="images/ecs.png" /></span>
+        	<label>ECS</label>
+        </div>
+        <div class="elb">
+        	<span><img src="images/elb.png" /></span>
+        	<label>ELB</label>
+        </div>
+        <div class="text-zixun">
+        	<a href="javascript:void(0)" target="_blank"
+		   onclick="hz6d_is_exist('setIsinvited()%3Bwindow.open(#liyc#https%3A%2F%2Fwww6.53kf.com%2FwebCompany.php%3Farg%3D10120886%26style%3D2%26language%3Dzh-cn%26charset%3DGBK%26kflist%3Doff%26kf%3Dhuayang%40lanhaihui.net%26zdkf_type%3D1%26referer%3Dhttp%253A%252F%252Fmes.lanhaihui.net%252Fsolution%252FsystemDevel.html%26keyword%3D%26tfrom%3D1%26tpl%3Dcrystal_blue%26uid%3Dd568953531a4ede9c942dd4a6e9837bf#liyc#%2C%20#liyc#_blank#liyc#%2C%20#liyc#height%3D600%2Cwidth%3D800%2Ctop%3D50%2Cleft%3D200%2Cstatus%3Dyes%2Ctoolbar%3Dno%2Cmenubar%3Dno%2Cresizable%3Dyes%2Cscrollbars%3Dno%2Clocation%3Dno%2Ctitlebar%3Dno#liyc#)');">
+        	<button>立即咨询</button>
+        	</a>
+        </div>
+       </div>
+	</div>
+</div>
+<div class="cooperation align-c">
+		<h1 class="">合作案例</h1>
+		<div class="line"></div>
+
+		<ul class="over-hide">
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_1.html"><img class="w-perCent100" src="images/anli/anli1.jpg"/></a>
+				</div>
+			</li>
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_2.html"><img class="w-perCent100" src="images/anli/anli2.jpg"/></a>
+				</div>
+			</li>
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_3.html"><img class="w-perCent100" src="images/anli/anli3.jpg"/></a>
+				</div>
+			</li>
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_4.html"><img class="w-perCent100" src="images/anli/anli4.jpg"/></a>
+				</div>
+			</li>
+			
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_5.html"><img class="w-perCent100" src="images/anli/anli5.jpg"/></a>
+				</div>
+			</li>
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_6.html"><img class="w-perCent100" src="images/anli/anli6.jpg"/></a>
+				</div>
+			</li>
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_7.html"><img class="w-perCent100" src="images/anli/anli7.jpg"/></a>
+				</div>
+			</li>
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_8.html"><img class="w-perCent100" src="images/anli/anli8.jpg"/></a>
+				</div>
+			</li>
+			
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_9.html"><img class="w-perCent100" src="images/anli/anli9.jpg"/></a>
+				</div>
+			</li>
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_10.html"><img class="w-perCent100" src="images/anli/anli10.jpg"/></a>
+				</div>
+			</li>
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_11.html"><img class="w-perCent100" src="images/anli/anli11.jpg"/></a>
+				</div>
+			</li>
+			<li class="col-xs-4 col-sm-4 col-md-2 col-lg-3">
+				<div>
+					<a href="case/erp_12.html"><img class="w-perCent100" src="images/anli/anli12.jpg"/></a>
+				</div>
+			</li>
+			
+		</ul>
+		<a href="javascript:void(0)" target="_blank"
+		   onclick="hz6d_is_exist('setIsinvited()%3Bwindow.open(#liyc#https%3A%2F%2Fwww6.53kf.com%2FwebCompany.php%3Farg%3D10120886%26style%3D2%26language%3Dzh-cn%26charset%3DGBK%26kflist%3Doff%26kf%3Dhuayang%40lanhaihui.net%26zdkf_type%3D1%26referer%3Dhttp%253A%252F%252Fmes.lanhaihui.net%252Fsolution%252FsystemDevel.html%26keyword%3D%26tfrom%3D1%26tpl%3Dcrystal_blue%26uid%3Dd568953531a4ede9c942dd4a6e9837bf#liyc#%2C%20#liyc#_blank#liyc#%2C%20#liyc#height%3D600%2Cwidth%3D800%2Ctop%3D50%2Cleft%3D200%2Cstatus%3Dyes%2Ctoolbar%3Dno%2Cmenubar%3Dno%2Cresizable%3Dyes%2Cscrollbars%3Dno%2Clocation%3Dno%2Ctitlebar%3Dno#liyc#)');">
+			<button>了解更多</button>
+		</a>
+
+	</div>
+<div class="online_box">
+	<h1>截止今天，我们共有</h1>
+	<div class="onl_list">
+		<ul>
+			<li>
+				<span>1,207</span>
+				<label>注册用户数</label>
+			</li>
+			<li>
+				<span>467</span>
+				<label>在线用户数</label>
+			</li>
+			<li>
+				<span>100,100 +</span>
+				<label>在线日单量</label>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="join-container"> 
+	<div class="cn text-center"> 
+		<div class="btns"> 
+		<a class="btn btn-transparent waves-effect" href="" target="_blank">联系订购</a> </div> 
+	</div> 
+</div>
+</div>
+
+<!-- 页面可编辑区域 -->
+
+
+
+<!-- <div class="customer_box">
+	<ul>
+		<li>
+			<div class="c_left">
+				<p><img src="images/sprite-icon_01.png"/></p>
+			</div>
+			<div class="c_right">
+				<h1>7x24小时售后支持</h1>
+				<h2>全国7×24小时客服热线</h2>
+			</div>
+		</li>
+		<li>
+			<div class="c_left">
+				<p><img src="images/sprite-icon_02.png"/></p>
+			</div>
+			<div class="c_right">
+				<h1>5倍故障时长赔偿</h1>
+				<h2>5倍赔付终端服务的时间</h2>
+			</div>
+		</li>
+		<li>
+			<div class="c_left">
+				<p><img src="images/sprite-icon_03.png"/></p>
+			</div>
+			<div class="c_right">
+				<h1>15天无理由退款</h1>
+				<h2>部分产品可享受15天无理由退款</h2>
+			</div>
+		</li>
+		<li>
+			<div class="c_left">
+				<p><img src="images/sprite-icon_04.png"/></p>
+			</div>
+			<div class="c_right">
+				<h1>多对一团队服务</h1>
+				<h2>优秀开发团队便捷服务</h2>
+			</div>
+		</li>
+	</ul>
+</div> -->
+<div class="customer_box">
+	<ul>
+		<li>
+			<div class="c_left">
+				<p><img src="images/sprite-icon_01.png"/></p>
+			</div>
+			<div class="c_right">
+				<h1>7x24小时售后支持</h1>
+				<h2>全国7×24小时客服热线</h2>
+			</div>
+		</li>
+		<li>
+			<div class="c_left">
+				<p><img src="images/sprite-icon_02.png"/></p>
+			</div>
+			<div class="c_right">
+				<h1>5倍故障时长赔偿</h1>
+				<h2>5倍赔付终端服务的时间</h2>
+			</div>
+		</li>
+		<li>
+			<div class="c_left">
+				<p><img src="images/sprite-icon_03.png"/></p>
+			</div>
+			<div class="c_right">
+				<h1>15天无理由退款</h1>
+				<h2>部分产品可享受15天无理由退款</h2>
+			</div>
+		</li>
+		<li>
+			<div class="c_left">
+				<p><img src="images/sprite-icon_04.png"/></p>
+			</div>
+			<div class="c_right">
+				<h1>多对一团队服务</h1>
+				<h2>优秀开发团队便捷服务</h2>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="foot_box">
+	<ul>
+		<li>
+			<h1><span class="f2">ERP</span></h1>
+			<h2><a href="erp_saas.html">Saas</a></h2>
+			<h2><a href="erp_paas.html">Paas</a></h2>
+		</li>
+		<li>
+			<h1><span class="f3">MES</span></h1>
+			<h2><a href="mes_pass.html">Paas</a></h2>
+		</li>
+		<li>
+			<h1><span class="f4">WMS</span></h1>
+			<h2><a href="wms_saas.html">Saas</a></h2>
+			<h2><a href="wms_paas.html">Paas</a></h2>
+		</li>
+		<li>
+			<h1><span class="f5">产品</span></h1>
+			<h2><a href="chanpin_aps.html">APS</a></h2>
+			<h2><a href="chanpin_oms.html">OMS</a></h2>
+			<h2><a href="chanpin_plm.html">PLM</a></h2>
+		</li>
+		<li>
+			<h1><span class="f6">案例</span></h1>
+			<h2><a href="anli.html">客户案例</a></h2>
+			<h2><a href="anli_jingdian.html">经典案例</a></h2>
+		</li>
+		<li>
+			<h1><span class="f7">关于我们</span></h1>
+			<h2><a href="about.html">公司简介</a></h2>
+			<h2><a href="manage.html">管理团队</a></h2>
+			<h2><a href="social_responsibility.html">社会责任</a></h2>
+			<h2><a href="honor.html">资质荣誉</a></h2>			
+		</li>
+	</ul>
+</div>
+
+
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/bootstrap-touch-slider.js"></script>
+
+<script type="text/javascript">
+	$('#bootstrap-touch-slider').bsTouchSlider();
+</script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('.slider3').bxSlider({
+			slideWidth: 390,
+			minSlides: 2,
+			maxSlides: 3,
+			moveSlides: 1,
+			startSlide: 1,
+			slideMargin: 15
+		});
+
+
+	});
+	//  标签切换
+	$(function () {
+		$(".order_title ul > li").click(tab);
+
+		function tab() {
+			$(this).addClass("hov").siblings().removeClass("hov");
+			var tab = $(this).attr("title");
+			$("#" + tab).show().siblings().hide();
+		}
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.slider3').bxSlider({
+			slideWidth: 390,
+			minSlides: 2,
+			maxSlides: 3,
+			moveSlides: 1,
+			startSlide: 1,
+			slideMargin: 15
+		});
+		function anli(width,pWid){
+			$(".A_Demo").PicCarousel({
+				"width":width,
+				"posterWidth":pWid,
+				"scale":0.9,
+				"speed":500,
+				 "autoPlay":true,
+				"delay":1000
+			});
+		}
+		function anliH(main,btn){
+			$(".poster-main").css("height",main);
+			$(".poster-main .poster-btn").css("top",btn)
+		}
+		var winW = $(window).outerWidth();
+		if(winW<400){
+			anli(300,150);
+			anliH(100,40)
+		}else if(winW<600){
+			anli(350,175);
+			anliH(120,45)
+		}else if(winW<800){
+			anli(550,275);
+			anliH(120,45)
+		}else if(winW<1000){
+			anli(750,375);
+			anliH(210)
+		}else if(winW<1200){
+			anli(800,400);
+			anliH(230)
+		}else if(winW>=1200){
+			anli(1100,550);
+		}
+		window.onresize = function(){
+
+		};
+
+
+		var liWs = $(".photo ol li").eq(0).outerWidth();
+		$(".photo ol").css("margin-left",-(liWs+40));
+		$("#left").click(function(){
+			var liW = $(".photo ol li").eq(0).outerWidth();
+			$(".photo ol").animate({"margin-left":0},500,function(){
+				$(".photo ol").prepend($(".photo ol li").eq(6));
+				$(".photo ol").css("margin-left",-(liW+40));
+			});
+		});
+		$("#right").click(function(){
+			var liW = $(".photo ol li").eq(0).outerWidth();
+			console.log(liW);
+			$(".photo ol").animate({"margin-left":-(liW*2+80)},500,function(){
+				$(".photo ol").append($(".photo ol li").eq(0));
+				$(".photo ol").css("margin-left",-(liW+40));
+			})
+		});
+
+	});
+
+//	标签切换
+function change(tab,content){
+var $tab =  $(tab);
+$tab.find("li").eq(0).addClass("now");
+	$tab.find("li").on("click",function(){
+		var index = $(this).index();
+		$(this).addClass("now").siblings().removeClass("now");
+		$(content).children("div").eq(index).show().siblings().hide();
+	})
+}
+change("#tab","#list");
+	
+</script>
+
+
+
+<!--在线交谈-->
+<style type="text/css">.fancybox-margin {
+	margin-right: 16px;
+}</style>
+</body>
+<script>
+	(function() {var _53code = document.createElement("script");_53code.src = "https://tb.53kf.com/code/code/10120886/2";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(_53code, s);})();
+</script>
+</html>

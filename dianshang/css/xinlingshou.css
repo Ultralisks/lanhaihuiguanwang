@@ -1,0 +1,156 @@
+/*banner*/
+.main-img { width: 100%; height: 370px; padding-top: 130px; color: #fff; text-align: center; background: url(../images/main-img.jpg) no-repeat center top; background-size: cover;}
+.main-img h2 { font-size: 48px;}
+.main-img p { margin-bottom: 100px; font-size: 18px; font-family: PingFangSC-Light; line-height: 1.8;}
+.main-img .btn { display: inline-block; width: 140px; height: 38px; font-size: 16px; line-height: 38px; color: #fffefe; background: #3dbaf7; border: 1px solid #3dbaf7;}
+.main-img .tel { padding-top: 10px; font-size: 14px; color: #fffefe;}
+
+/*内容模块*/
+.container-wrap { min-width: 1210px;}
+.container { width: 1210px; padding: 20px 0 0; margin: 0 auto;}
+.container .title { position: relative; margin-bottom: 15px; font-size: 30px; line-height: 40px; color: #333; text-align: center;}
+.container .desc { margin: 0 auto; font-size: 14px; line-height: 1.8; color: #666; text-align: center;}
+.container .content { padding-top: 45px;}
+.container ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.container li { float: left; line-height: 1.6; text-align: center;}
+.container li .iconfont { display: block; margin: 0 auto 15px;}
+.container li h3 { font-size: 16px; color: #333;}
+.container li p { padding-top: 10px; font-size: 14px; color: #72767a;}
+.container .btn-box { padding-top: 30px; text-align: center;}
+.container .btn { display: inline-block; padding: 12px 50px; font-size: 16px; color: #666; border: 1px solid #bbc0ce; border-radius: 3px; -webkit-transition: all .3s; -moz-transition: all .3s; -o-transition: all .3s; transition: all .3s;}
+.container .btn:hover { color: #fff; background: #2ea7e0; border-color: #2ea7e0;}
+.container .btn-primary { color: #fff; background: #2ea7e0; border: 1px solid #2ea7e0;}
+.container .notice { color: #82939e;}
+
+/*引领全新商业模式，助力销售业绩腾飞*/
+.module1 li { position: relative; z-index: 1; width: 242px; height: 338px; overflow: hidden; transition: all .4s;}
+.module1 img { position: absolute; top: 0; left: 0; width: 242px;}
+.module1 .module1-text { position: relative; z-index: 2; width: 242px; height: 338px; color: #fff; overflow: hidden; transition: all .4s;}
+.module1 .module1-text .iconfont { margin-top: 100px; font-size: 78px; line-height: 1; transition: all .4s;}
+.module1 .module1-text h3 { padding-top: 25px; font-size: 18px; color: #fff; transition: all .4s;}
+.module1 .module1-text p { width: 190px; padding-top: 40px; margin: 0 auto; font-size: 14px; color: #fff; visibility: hidden;}
+.module1 li:hover .module1-text { background: rgba(61,186,247,.8);}
+.module1 li:hover .module1-text .iconfont { margin-top: 40px;}
+.module1 li:hover .module1-text h3 { padding-top: 0;}
+.module1 li:hover .module1-text p { visibility: visible;}
+
+/*线上线下数据互通*/
+.module2 li { width: 120px; padding-bottom: 55px; margin-left: 98px;text-align: center;}
+.module2 li .iconfont { display: block; width: 74px; height: 74px; font-size: 40px; line-height: 74px; color: #fff; text-align: center; overflow: hidden; border-radius: 50%;}
+.module2 li img{display: inline-block; width: 74px; height: 74px;margin-bottom: 10px;}
+
+/*线上线下融合，数字化营销，精细化管控，重新定义消费场景*/
+/*hotproduct*/
+.hotproduct{height: 640px;background: #f6f8fb;position: relative;margin-top: 30px;}
+.home-til{padding-top: 60px;padding-bottom: 20px;text-align: center;}
+.home-til h3{margin-bottom: 30px;font-size: 28px;line-height: 1;color: #333;}
+.home-til p{font-size: 14px;line-height: 1;color: #828282;}
+.hotproduct-box{text-align: center;}
+.hotproduct-inline{display: inline-block;overflow: hidden;width: 1120px;margin: 0 auto;position: relative;height: 430px;}
+.hotproduct-box ul{font-size: 0;width: 6160px;position: absolute;top: 22px;}
+.hotproduct-box ul li{margin-right: -1px;width: 280px;height: 386px;float: left;border: 1px solid #e8ebee;background: #fff;transition: 0.4s;position: relative;text-align: center;}
+.hotproduct-box ul li:hover{margin-top: -22px;height: 430px;border: 1px solid #268cf4;box-shadow: 0 0 35px rgba(39,142,287,0.3);z-index: 5;}
+.hotproduct-top{height: 145px;padding-top: 16px;border-bottom: 1px solid #e8ebee;box-sizing: border-box;background: #eef0f3;transition: 0.4s;}
+.hotproduct-top-img{margin-bottom: 15px;display: inline-block;width: 52px;height: 52px;}
+.hotproduct-top h3{margin-bottom: 10px;font-size: 16px;line-height: 1;color: #333;transition: 0.4s;}
+.hotproduct-top p{font-size: 14px;line-height: 1;color: #333;transition: 0.4s;}
+.hotproduct-box ul li:hover .hotproduct-top{height: 167px;padding-top: 38px;background: #268cf4;border-bottom: none;}
+.hotproduct-box ul li:hover .hotproduct-top h3{color: #fff;}
+.hotproduct-box ul li:hover .hotproduct-top p{color: #fff;}
+.hotproduct-cont{padding-top: 25px;position: relative;}
+.hotproduct-cont p{font-size: 14px;line-height: 26px;color: #828282;}
+.hotproduct-cont p:last-child{margin-bottom: 0;}
+.hotproduct-cont a{margin-left: -66px;display: block;width: 132px;height: 40px;border: 1px solid #ffa200;border-radius: 2px;font-size: 16px;line-height: 38px;color: #ffa200;position: absolute;top: 178px;left: 50%;box-sizing: border-box;transition: 0.4s;}
+.hotproduct-cont a:hover{color: #fff;}
+.hotproduct-cont a:hover .move-effect{width: 100%;background: #ffa200;}
+.hotproduct-box .prev,.hotproduct-box .next{display: block;width: 22px;height: 41px;position: absolute;top: 54%;cursor: pointer;}
+.hotproduct-box .prev img,.hotproduct-box .next img{display: block;width: 100%;height: 100%;}
+.hotproduct-box .prev{left: 50%;margin-left: -600px;}
+.hotproduct-box .next{right: 50%;margin-right: -600px;}
+.hotproduct-top-img01{background: url('../images/icon_quanqudaoyingxiao.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img02{background: url('../images/icon_shejiaohualiuliangyinqing.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img03{background: url('../images/icon_duoyangtesegongneng.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img04{background: url('../images/icon_fengfuyingxiaoshoufa.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img05{background: url('../images/icon_dashujuzhidao.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img06{background: url('../images/icon_duozhongshangyemoshi.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img07{background: url('../images/icon_zhinenghuashouyin.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img08{background: url('../images/icon_huiyuanxianshangyinliu.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img09{background: url('../images/icon_xianshangxiadanxianxiafuwu.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img10{background: url('../images/icon_dingdanzhinengfenpei.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img11{background: url('../images/icon_huiyuanshujudatong.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img12{background: url('../images/icon_zhuanyejierp.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img13{background: url('../images/icon_gpslbsdingwei.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img14{background: url('../images/icon_zhenzhengdeshujuhutong.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img15{background: url('../images/icon_fengfupeisongfangshi.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img16{background: url('../images/icon_peisongziyuanzhenghe.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img17{background: url('../images/icon_peisongshijianxuanzhe.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-top-img18{background: url('../images/icon_peisongfanwei.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img01{background: url('../images/icon_quanqudaoyingxiaolan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img02{background: url('../images/icon_shejiaohualiuliangyinqinglan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img03{background: url('../images/icon_duoyangtesegongnenglan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img04{background: url('../images/icon_fengfuyingxiaoshoufalan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img05{background: url('../images/icon_dashujuzhidaolan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img06{background: url('../images/icon_duozhongshangyemoshilan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img07{background: url('../images/icon_zhinenghuashouyinlan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img08{background: url('../images/icon_huiyuanxianshangyinliulan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img09{background: url('../images/icon_xianshangxiadanxianxiafuwulanm.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img10{background: url('../images/icon_dingdanzhinengfenpeilan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img11{background: url('../images/icon_huiyuanshujudatonglan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img12{background: url('../images/icon_zhuanyejierplan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img13{background: url('../images/icon_gpslbsdingweilan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img14{background: url('../images/icon_zhenzhengdeshujuhutonglan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img15{background: url('../images/icon_fengfupeisongfangshilan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img16{background: url('../images/icon_peisongziyuanzhenghelan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img17{background: url('../images/icon_peisongshijianxuanzhelan.png') no-repeat;background-size: 100% 100%;}
+.hotproduct-box ul li:hover .hotproduct-top-img18{background: url('../images/icon_peisongfanweilan.png') no-repeat;background-size: 100% 100%;}
+
+.module3 ul { position: relative; z-index: 1; overflow: hidden;}
+.module3 ul:before { content: ''; position: absolute; right: 5px; top: 158px; left: 5px; height: 85px; border: 5px solid #eee;}
+.module3 li { position: relative; z-index: 1; padding-top: 42px; margin-left: 36px; border-radius: 10px;}
+.module3 li .icon-bg { position: absolute; top: 0; left: 43px; z-index: -1; display: block; width: 84px; height: 84px; border-radius: 50%; opacity: .8;}
+.module3 li .iconfont { position: absolute; top: 6px; left: 49px; display: block; width: 72px; height: 72px; font-size: 40px; line-height: 72px; color: #fff;  border-radius: 50%;}
+.module3 li .text { width: 171px; height: 229px; border-radius: 10px;}
+.module3 li .text h3 { position: relative; z-index: 1; padding: 50px 0 10px; margin-bottom: 10px; font-size: 16px; color: #fff;}
+.module3 li .text h3:after { content: ''; position: absolute; bottom: 0; left: 50%; display: block; width: 22px; height: 1px; margin-left: -11px; background: #fff;}
+.module3 li .text p { width: 120px; margin: 0 auto; font-size: 12px; color: #fff;}
+
+/*新零售热门应用场景*/
+.module4 li { width: 74px; margin-left: 88px;}
+.module4 li .iconfont { width: 74px; height: 74px; font-size: 35px; line-height: 74px; color: #fff; border-radius: 50%;}
+.module4 li h3 { font-size: 14px;}
+.module4 li img{margin-bottom: 10px;}
+
+/*新零售是精细化运营的零售*/
+.module5-1 .module5-img { width: 495px; height: 285px;}
+.module5-1 .module5-img img { width: 495px; border-radius: 8px; box-shadow: 0 0 22px rgba(0,0,0,.1);}
+.module5-2 .module5-text { padding-top: 60px !important;}
+.module5-2 .module5-img img { width: 600px;}
+.module5-2 .module5-img .img { position: relative; z-index: 1;}
+.module5-2 .module5-img .img dl { position: absolute; right: 0; bottom: 25px; left: 0; color: #aaa; text-align: center;}
+.module5-2 .module5-img .img dl dt { float: left; width: 160px;}
+.module5-2 .module5-img .img dl dd { float: right; width: 320px;}
+.module5 .module5-text { width: 480px; padding-top: 5px;}
+.module5 .module5-text h3 { padding-bottom: 15px; font-size: 18px; color: #333;}
+.module5 .module5-text p { margin-bottom: 25px; line-height: 22px;}
+.module5 .module5-tab span { float: left; width: 98px; height: 30px; margin: 24px 0 0 24px; line-height: 30px; color: #aaa; text-align: center; cursor: pointer; border: 1px solid #aaa; border-radius: 2px;}
+.module5 .module5-tab span.active { color: #fff; background: #3dbaf7; border-color: #3dbaf7;}
+
+/*他们都使用*/
+.module6 li { position: relative; z-index: 1; width: 290px; height: 380px; margin: 0 0 16px 16px; overflow: hidden; cursor: pointer;}
+.module6 li img { width: 290px; height: 380px;}
+.module6 li .text-bg { position: absolute; left: 0; top: 320px; width: 290px; height: 380px; background: #000; opacity: .8; filter: alpha(opacity = 80); transition: all .4s;}
+.module6 li .text { position: absolute; left: 0; top: 320px; width: 260px; height: 380px; padding: 0 25px; transition: all .4s;}
+.module6 li .text h3 { height: 60px; font-size: 18px; line-height: 60px; color: #fff;}
+.module6 li .text p { font-size: 14px; line-height: 25px; color: #fff; text-align: left; transition: all .4s;}
+.module6 li .text .info { height: 125px; padding-top: 20px;}
+.module6 li .text a { display: block; width: 106px; height: 26px; margin: 40px auto 0; font-size: 12px; line-height: 26px; color: #fff; border: 1px solid #fff; border-radius: 2px; transition: all .3s;}
+.module6 li .text a:hover { background: rgba(255,255,255,.15);}
+.module6 li:hover .text-bg, .module6 li:hover .text { top: 0;}
+.module6 li:hover .text h3 { padding-top: 30px;}
+
+/*底部banner*/
+.register-tip { background: url(../images/register-tip.jpg) no-repeat center top; background-size: cover;}
+.register-tip .btn-wrap { padding: 20px 0 35px; text-align: center;}
+.register-tip .btn-wrap .btn { height: 34px; padding: 0 26px; margin: 0 5px; font-size: 16px; line-height: 34px; color: #fff; border: 1px solid #fff; border-radius: 0;}
+.register-tip .btn-wrap .btn-white { color: #3ebaf8; background: #fff !important;}
+.register-tip .btn-wrap .btn:hover { background: rgba(255,255,255,.1);}

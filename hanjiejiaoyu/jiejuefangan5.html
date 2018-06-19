@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>企业在线培训系统_企业内部培训管理软件_员工培训系统-瀚杰教育软件</title>
+    <meta name="author" content="瀚杰教育软件">
+    <meta name="keywords" content="企业在线培训系统、企业内部培训管理软件、员工培训系统">
+    <meta name="description" content="「瀚杰教育软件」企业培训系统，在线培训+岗位考核+知识库管理+共享交流...搭建专属 企业自己的「云端企业大学」支持 手机,微信,APP 多端同步,专属企业云端学堂">
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <link rel="stylesheet" href="./css/page-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/lighting-system2.css" type="text/css">
+</head>
+<style type="text/css">
+    @font-face {
+        font-family: 'PingFangSC-Semibold';
+        src: url('./font/pingfang.ttf');
+    }
+    body{font-family: PingFangSC-Semibold;}
+    #footer{padding: 30px 0;background: #2E3136;}
+    #footer .viewport{display: flex;justify-content: space-around;}
+    #footer .viewport ul li{margin-bottom: 5px;}
+    #footer .viewport ul li h5{color: #9CA5AC;font-size: 16px;}
+    #footer .viewport ul li a{color: #9CA5AC;text-decoration:none;out-line: none;font-size: 14px;}
+</style>
+<body>
+    <div class="an-m-1 lighting-system" style="background: none;height: 110px;">
+        <div id="item-header">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <style>
+                .bg-shadows {
+                background: #000;
+                opacity: 0.3;
+                filter: alpha(opacity=30);
+                position: fixed;
+                _position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 999;
+                display: none;
+                }
+
+                .tryoutBox {
+                    width: 450px;
+                    height: 412px;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    margin: -206px 0 0 -225px;
+                    background: #fff;
+                    z-index: 9999;
+                    display: none;
+                    border-radius: 5px;
+                }
+
+                .tryLogo {
+                    display: block;
+                    text-align: center;
+                    padding: 40px 0;
+                    line-height: 40px;
+                    font-size: 36px;
+                    font-weight: bold;
+                    color: #111;
+                }
+
+                .trial-ab-form {
+                    padding: 0 55px;
+                }
+
+                .trial-ab-form .trialBtn {
+                    height: 36px;
+                    margin: 30px 0 57px 0;
+                }
+
+                .trial-ab-form .trialBtn .suBtn {
+                    padding: 0;
+                    background: #398ae6;
+                    border: none;
+                    border-radius: 0;
+                    color: #fff;
+                    font-size: 14px;
+                    margin: 0;
+                    height: 36px;
+                    line-height: 36px;
+                    width: 100%;
+                    box-shadow: 0 0 30px rgba(43, 131, 230, .3);
+                }
+
+                .trial-ab-form li {
+                    padding: 0 0 15px 0;
+                }
+
+                .trial-ab-form li input,
+                .trial-ab-form li select {
+                    height: 34px;
+                    line-height: 34px;
+                    width: 100%;
+                    background: none;
+                    border: none;
+                    border-bottom: solid 1px #398ae6;
+                    color: #7b7c7d;
+                    padding: 0;
+                    font-size: 14px;
+                }
+
+                .trial-ab-form li select {
+                    appearance: none;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    padding-right: 10px;
+                    background: url(../images/arrow.png) no-repeat scroll right center transparent;
+                }
+
+                .reg-try {
+                    height: 30px;
+                    line-height: 30px;
+                    margin-top: 7px;
+                }
+
+                .reg-try a {
+                    color: #398ae6;
+                    font-size: 14px;
+                }
+
+                .reg-try a:hover {
+                    color: #1e73e7;
+                    text-decoration: none;
+                }
+
+                .close-try {
+                    width: 36px;
+                    height: 36px;
+                    position: absolute;
+                    top: -18px;
+                    right: -18px;
+                    display: block;
+                    background: url(../images/close-try.png) no-repeat;
+                    box-shadow: 0 0 4px rgba(0, 0, 0, .16);
+                    border-radius: 50%;
+                }
+            </style>
+            <div class="ic_head_fixed">
+                <div id="header" class="header-bx">
+                    <div class="viewport h-bx-v">
+                        <div class="header">
+                            <div class="header-wrap">
+                                <h1 class="logo"><a href="index.html" title="瀚杰在线教育软件—在线教育整体解决方案提供商"><img src="./images/logo.png" alt="瀚杰在线教育软件—在线教育整体解决方案提供商"></a></h1>
+                                <div class="pc-nav-tel clearfix">
+                                    <div class="nav-menu">
+                                        <ul class="nav-ul" id="nav-ul">
+                                            <li><a href="index.html" title="官网首页" target="_blank">首页</a></li>
+                                            <li class="current">
+                                                <a href="javascript:void(0);" title="产品">产品与解决方案</a>
+                                            </li>
+                                            <li>
+                                                <a href="anli.html" title="案例" target="_blank">案例</a>
+                                            </li>
+                                            <li><a href="chuangxin.html" title="生态合作">创新合作</a></li>
+                                            <li><a href="women.html" title="我们" target="_blank">我们</a></li>
+                                            <!--<li><a href="javascript:void(0);" title="免费试用" target="_blank" style="color: #FFBC42;">免费试用</a></li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ic-sub-nav-bx">
+                    <div class="viewport">
+                        <div class="ic-sub-nav-list" id="ic-sub-nav-list">
+                            <a href="jiejuefangan1.html" target="_blank" data-id="wx-pc/" class="">网校系统</a>
+                            <a href="jiejuefangan2.html" target="_blank" data-id="exam-pc/" class="">考试测评</a>
+                            <a href="jiejuefangan3.html" target="_blank" data-id="sns-pc/" class="">互动班级</a>
+                            <a href="jiejuefangan4.html" target="_blank" data-id="jw-pc/" class="">排课教务系统</a>
+                            <a href="jiejuefangan5.html" target="_blank" data-id="nxb-pc/" class="current">企业培训系统</a>
+                            <a href="jiejuefangan7.html" target="_blank" data-id="va-pc/" class="">云点播</a>
+                            <a href="jiejuefangan8.html" target="_blank" data-id="fz-pc/" class="">云课堂</a>
+                            <a href="jiejuefangan9.html" target="_blank" data-id="zh-pc/" class="">智慧校园</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /header end -->
+    <div class="main-body">
+        <section class="it animate-enter">
+            <article>
+                <div class="I-appico animated fadeInLeft">
+                    <h1 class="one-txt-left"> <span class="banner-txt mt5"> <img width="408" src="./images/nx-wz.png" alt="搭建企业大学平台，一个学习型组织的标配"> </span> </h1>
+                </div>
+                <div class="downBtn animated delay0d5s fadeInDown">
+                    <h1 class="one-txt-right">
+            标配
+          </h1>
+                </div>
+                <div class="animated scaleBig delay1s">
+                    <div class="one-txt-bottom">
+                        <span>企业内训</span>
+                        <span>员工培训</span>
+                        <span>岗位考核</span>
+                        <span>培训计划</span>
+                        <em class="em-top">
+              <img src="./images/one-b-t-bg.png" alt="">
+            </em>
+                        <em class="em-bottom">
+              <img src="./images/one-b-b-bg.png" alt="">
+            </em>
+                    </div>
+                </div>
+                <div class="animated fadeInUp delay1d5s">
+                    <div class="one-txt-bottom-btn">
+                        <a href="javascript:void(0);" target="_blank">查看演示站</a>
+                    </div>
+                </div>
+                <div class="apple animated fadeInRight">
+                    <div class="aSlide">
+                        <ul class="aSlideUl" style="width: 576px; margin-left: -140.921px;">
+                            <li>
+                                <img src="./images/banner-2.jpg" width="192" height="340">
+                            </li>
+                            <li>
+                                <img src="./images/banner-3.jpg" width="192" height="340">
+                            </li>
+                            <li>
+                                <img src="./images/banner-4.jpg" width="192" height="340">
+                            </li>
+                        </ul>
+                        <a href="javascript:void(0);" class="prev">←</a>
+                        <a href="javascript:void(0);" class="next">→</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- /intro end-->
+        <section class="os">
+            <article>
+                <div class="two-header animated fadeInDown">
+                    <h2 class="two-title">企业O2O在线培训学习平台</h2>
+                    <span>&nbsp;</span>
+                </div>
+                <div class="animated delay0d5s scale originTopLeft">
+                    <ul class="pro-list clearfix">
+                        <li>
+                            <div class="p-l-wrap">
+                                <div><span class="pro-box a1"></span> </div>
+                                <div class="mt10">
+                                    <span class="hLh30 fsize20 c-333 f-fH">培训学习</span>
+                                    <p class="c-666 hLh30 mt10 fsize14">在线培训学习，学习轨迹分析，同步讲义</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-l-wrap">
+                                <div><span class="pro-box a2"></span> </div>
+                                <div class="mt10">
+                                    <span class="hLh30 fsize20 c-333 f-fH">岗位考核</span>
+                                    <p class="c-666 hLh30 mt10 fsize14">安排员工考核，领导汇报成绩</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-l-wrap">
+                                <div><span class="pro-box a3"></span> </div>
+                                <div class="mt10">
+                                    <span class="hLh30 fsize20 c-333 f-fH">视频系统</span>
+                                    <p class="c-666 hLh30 mt10 fsize14">在线点播、在线直播</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-l-wrap">
+                                <div><span class="pro-box a4"></span> </div>
+                                <div class="mt10">
+                                    <span class="hLh30 fsize20 c-333 f-fH">社区平台</span>
+                                    <p class="c-666 hLh30 mt10 fsize14">同事圈，在线交流，活动组织，兴趣小组</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-l-wrap">
+                                <div><span class="pro-box a5"></span> </div>
+                                <div class="mt10">
+                                    <span class="hLh30 fsize20 c-333 f-fH">手机APP、微信</span>
+                                    <p class="c-666 hLh30 mt10 fsize14">适配安卓、IOS,微信无缝对接</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-l-wrap">
+                                <div><span class="pro-box a6"></span> </div>
+                                <div class="mt10">
+                                    <span class="hLh30 fsize20 c-333 f-fH">定制服务</span>
+                                    <p class="c-666 hLh30 mt10 fsize14">根据企业需求，定制开发</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <!-- /os end -->
+        <section class="dw">
+            <article>
+                <div class="three-down animated fadeInDown">
+                    <img src="./images/three-down.png" alt="">
+                </div>
+                <div class="three-left animated delay0d5s scale originTopLef">
+                    <img src="./images/three-left.png" alt="">
+                </div>
+                <div class="three-font scaleSmall animated scale">
+                    <div class="font-box">
+                        <p>
+                            <tt class="fsize30 c-fff">最专业的企业在线学习培训</tt>
+                        </p>
+                        <p>
+                            <tt class="fsize30 c-fff">系统整体解决方案提供商</tt>
+                            <tt class="fsize30 c-fff"> —— </tt>
+                            <tt class="fsize30 c-master">内训宝</tt>
+                        </p>
+                    </div>
+                    <div class="font-box-2">
+                        <p>9年互联网经验，整合国内一线优秀大型企业对内部培训学习，知识体系结构的需求。</p>
+                        <p>强大的产品研发团队做为保障，磨练出最切合企业内部的管理，培训，学习，考核，</p>
+                        <p>共享，交流。以及对外渠道高，合作商及客户的远程培训为一体的内训系统（内训宝）</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="om">
+            <article>
+                <div class="two-header animated fadeInDown">
+                    <h2 class="two-title">最专业的企业培训整体解决方案</h2>
+                    <span>&nbsp;</span>
+                </div>
+                <div class="two-list-in animated delay0d5s scale originTopLeft">
+                    <ul class="two-list-infor clearfix">
+                        <li>
+                            <div class="box-in">
+                                <span class="s3">&nbsp;</span>
+                                <div class="mt20">
+                                    <tt class="c-master fsize24 f-fM">企业自主品牌</tt>
+                                </div>
+                                <p>
+                                    <tt class="c-666 fsize14 f-fM">独立服务器，独立域名，企业所属</tt>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-in">
+                                <span class="s4">&nbsp;</span>
+                                <div class="mt20">
+                                    <tt class="c-master fsize24 f-fM">完善的培训</tt>
+                                </div>
+                                <p>
+                                    <tt class="c-666 fsize14 f-fM">学习、培训、员工组织一应俱全</tt>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-in">
+                                <span class="s2">&nbsp;</span>
+                                <div class="mt20">
+                                    <tt class="c-master fsize24 f-fM">专业的分析</tt>
+                                </div>
+                                <p>
+                                    <tt class="c-666 fsize14 f-fM">学习、考试数据深度记录分析</tt>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box-in">
+                                <span class="s1">&nbsp;</span>
+                                <div class="mt20">
+                                    <tt class="c-master fsize24 f-fM">多终端支持</tt>
+                                </div>
+                                <p>
+                                    <tt class="c-666 fsize14 f-fM">支持PC、安卓、IOS</tt>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="dm">
+            <article>
+                <div class="nxb-title animated scale originTopLef">
+                    <img src="./images/nxb-title.png" alt="">
+                </div>
+                <div class="font-box-2 nxb-cont delay0d5s fadeInDown animated ">
+                    <p>搭建属于企业自己的平台：独立域名，独立部署，独立运营，个性化定制开发服务完善的系统功能</p>
+                    <p>学习计划制定、学习全程跟踪、在线考核管理、组织架构管理、报表统计展示</p>
+                </div>
+            </article>
+        </section>
+        <section class="oi">
+            <article>
+                <div class="two-header animated fadeInDown">
+                    <h2 class="two-title">对内员工组织培训，对外提升企业知名度、影响力</h2>
+                    <span>&nbsp;</span>
+                </div>
+                <div class="mt30 cor-solution animated fadeInDown delay0d5s">
+                    <ul class="clearfix">
+                        <li>
+                            <dl class="c-s-box">
+                                <dt> <span class="c-s-1"></span>
+                                    <p>学习培训</p>
+                                </dt>
+                                <dd><span>在线学习</span></dd>
+                                <dd><span>课程筛选</span></dd>
+                                <dd><span>岗位技能</span></dd>
+                                <dd><span>互动答疑</span></dd>
+                                <dd><span>知识分享</span></dd>
+                                <dd><a target="_blank" href="javascript:void(0);">立即体验</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="c-s-box">
+                                <dt> <span class="c-s-1"></span>
+                                    <p>员工考核</p>
+                                </dt>
+                                <dd><span>学习记录</span></dd>
+                                <dd><span>入职培训</span></dd>
+                                <dd><span>技能提升</span></dd>
+                                <dd><span>安排考试</span></dd>
+                                <dd><span>学习计划</span></dd>
+                                <dd><a target="_blank" href="javascript:void(0);">立即体验</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="c-s-box">
+                                <dt> <span class="c-s-1"></span>
+                                    <p>知识库管理</p>
+                                </dt>
+                                <dd><span>课程管理</span></dd>
+                                <dd><span>岗位规划</span></dd>
+                                <dd><span>知识文库</span></dd>
+                                <dd><span>试题库</span></dd>
+                                <dd><span>知识点分类</span></dd>
+                                <dd><a target="_blank" href="javascript:void(0);">立即体验</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="c-s-box">
+                                <dt> <span class="c-s-1"></span>
+                                    <p>系统管理便捷</p>
+                                </dt>
+                                <dd><span>组织架构管理</span></dd>
+                                <dd><span>岗位课程管理</span></dd>
+                                <dd><span>员工权限分配</span></dd>
+                                <dd><span>员工统计数据</span></dd>
+                                <dd><span>员工答疑互动</span></dd>
+                                <dd><a target="_blank" href="javascript:void(0);">立即体验</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="c-s-modul">
+            <article>
+                <div class="two-header animated fadeInDown">
+                    <h2 class="two-title">140余项功能，在线培训、在线题库、社交分享、在线视频点播直播一应俱全</h2>
+                    <span>&nbsp;</span>
+                </div>
+                <div class="mt10 c-s-feature animated fadeInDown delay0d5s">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="c-f-box">
+                                <div class="c-f-top">
+                                    <span class="c-f-1"></span>
+                                    <p>系统管理</p>
+                                </div>
+                                <div class=" c-f-main">
+                                    <p>网站名称、logo</p>
+                                    <p>组织架构管理</p>
+                                    <p>部门权限管理</p>
+                                    <p>岗位管理</p>
+                                    <p>员工权限分配</p>
+                                    <p>网站信息自定义</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="c-f-box col-line1 ">
+                                <div class="c-f-top">
+                                    <span class="c-f-2"></span>
+                                    <p>知识库</p>
+                                </div>
+                                <div class=" c-f-main">
+                                    <p>知识库结构</p>
+                                    <p>课程资源</p>
+                                    <p>文档资源</p>
+                                    <p>直播课程</p>
+                                    <p>职业体系课程</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="c-f-box col-line1 ">
+                                <div class="c-f-top">
+                                    <span class="c-f-3"></span>
+                                    <p>员工管理</p>
+                                </div>
+                                <div class=" c-f-main">
+                                    <p>员工批量导入</p>
+                                    <p>员工课程分配</p>
+                                    <p>员工考核安排</p>
+                                    <p>系统消息发生</p>
+                                    <p>互动问答管理</p>
+                                    <p>评论答疑管理</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="c-f-box">
+                                <div class="c-f-top">
+                                    <span class="c-f-4"></span>
+                                    <p>试卷库</p>
+                                </div>
+                                <div class=" c-f-main">
+                                    <p>试卷体系管理</p>
+                                    <p>知识点</p>
+                                    <p>试题批量导入</p>
+                                    <p>试卷组卷</p>
+                                    <p>安排员工考核</p>
+                                    <p>试卷成绩查询</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="c-f-box col-line2 ">
+                                <div class="c-f-top">
+                                    <span class="c-f-5"></span>
+                                    <p>财务（对外售卖）</p>
+                                </div>
+                                <div class=" c-f-main">
+                                    <p>订单管理</p>
+                                    <p>流水管理</p>
+                                    <p>课程卡充值卡</p>
+                                    <p>会员制购买</p>
+                                    <p>退费管理</p>
+                                    <p>优惠券</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="c-f-box col-line2">
+                                <div>
+                                    <div class="c-f-top">
+                                        <span class="c-f-6"></span>
+                                        <p>统计分析</p>
+                                    </div>
+                                    <div class=" c-f-main">
+                                        <p>员工注册量走势</p>
+                                        <p>员工活跃度走势</p>
+                                        <p>订单统计</p>
+                                        <p>学员学习轨迹</p>
+                                        <p>课程播放分析</p>
+                                        <p>部门学习统计</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <!-- <section class="cl">
+      <article>
+        <div class="five-box scaleSmall animated scale delay0d5s">
+          <h2>
+            1人一天1元钱、组织 效率提升30%
+            <span>&nbsp;</span>
+          </h2>
+          <div class="in-put">
+            <span class="">购买人数</span>
+            <input type="text" placeholder="请输入购买人数">
+            <a href="javascript:void(0);" class="">计算</a>
+            <div class="clear"></div>
+          </div>
+          <a href="javascript:void(0);" class="ck-more">
+            查看价格方案>>
+          </a>
+        </div>
+      </article>
+    </section> -->
+        <section class="al">
+            <article>
+                <div class="animated fadeInDown six-box">
+                    <h2>
+            <tt class="fsize46 f-fH c-master">他们</tt>
+            <tt class="fsize30 f-fH c-333">正在使用的（内训宝）</tt>
+          </h2>
+                </div>
+                <div class="six-box-list animated delay0d5s scale originTopLeft">
+                    <section class="sliderKbWrap">
+                        <div class="sliderBox">
+                            <section id="hotSlide" class="hotSlideWrap mb30">
+                                <div class="hotSlide" style="overflow: hidden; position: relative;">
+                                    <div class="slides_control" style="position: relative; width: 3600px; height: 150px; left: -2222.36px;">
+                                        <div class="hotpic" style="position: absolute; top: 0px; left: 1200px; z-index: 0; display: none;">
+                                            <article class="six-list-in">
+                                                <ul class="clearfix">
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="cfzb">
+                            
+                          </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="fc">
+                            
+                          </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="jt">
+                            
+                          </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="zhxs">
+                            
+                          </a>
+                                                    </li>
+                                                </ul>
+                                            </article>
+                                        </div>
+                                        <div class="hotpic" style="position: absolute; top: 0px; left: 1200px; z-index: 5; display: block;">
+                                            <article class="six-list-in">
+                                                <ul class="clearfix">
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="cfzb">
+                            
+                          </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="fc">
+                            
+                          </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="jt">
+                            
+                          </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="zhxs">
+                            
+                          </a>
+                                                    </li>
+                                                </ul>
+                                            </article>
+                                        </div>
+                                        <div class="hotpic" style="position: absolute; top: 0px; left: 2400px; z-index: 0; display: block;">
+                                            <article class="six-list-in">
+                                                <ul class="clearfix">
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="cfzb">
+                            
+                          </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="fc">
+                            
+                          </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="jt">
+                            
+                          </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="zhxs">
+                            
+                          </a>
+                                                    </li>
+                                                </ul>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a target="_self" class="prev" href="javascript:void(0);">Prev</a>
+                                <a target="_self" class="next" href="javascript:void(0);">next</a>
+                                <!-- <ul class="pagination">
+                                    <li class=""><a n="#0" href="javascript:void(0);">1</a></li>
+                                    <li class=""><a n="#1" href="javascript:void(0);">2</a></li>
+                                    <li class="current"><a n="#2" href="javascript:void(0);">3</a></li>
+                                </ul> -->
+                            </section>
+                        </div>
+                        <!-- sliderBox -->
+                        <div class="clear"></div>
+                    </section>
+                </div>
+            </article>
+        </section>
+        <section class="apply ">
+            <div class="mb50 container">
+                <h2 class="c-title clearfix">
+          <tt class="more fr"><font style="font-weight: normal;" class="c-999 f-fM fsize14">（提交您的资料，即免费试用）</font></tt>
+          <span class="fl sqsy">提交需求</span>
+        </h2>
+                <form enctype="multipart/form-data" method="post" name="applyForm">
+                    <ul id="apply">
+                        <li>
+                            <label>
+                                <input type="text" id="userName" onblur="if(this.value==&#39;&#39;)this.value=&#39;申请人&#39;;" onfocus="if(this.value==&#39;申请人&#39;)this.value=&#39;&#39;;" value="申请人" name="user.userName">
+                            </label>
+                            <label class="ml10">
+                                <input type="text" id="mobile" name="user.mobile" onblur="if(this.value==&#39;&#39;)this.value=&#39;手机号码&#39;;" onfocus="if(this.value==&#39;手机号码&#39;)this.value=&#39;&#39;;" value="手机号码">
+                            </label>
+                            <label>
+                                <input type="text" id="email" name="user.email" onblur="if(this.value==&#39;&#39;)this.value=&#39;电子邮箱&#39;;" onfocus="if(this.value==&#39;电子邮箱&#39;)this.value=&#39;&#39;;" value="电子邮箱">
+                            </label>
+                            <select name="user.diQu" id="diQu" class="ml10">
+                                <option value="" selected="selected">--地区--</option>
+                                <option value="北京">北京</option>
+                                <option value="上海">上海</option>
+                                <option value="广东">广东</option>
+                                <option value="江苏">江苏</option>
+                                <option value="山东">山东</option>
+                                <option value="浙江">浙江</option>
+                                <option value="河南">河南</option>
+                                <option value="河北">河北</option>
+                                <option value="辽宁">辽宁</option>
+                                <option value="四川">四川</option>
+                                <option value="湖南">湖南</option>
+                                <option value="湖北">湖北</option>
+                                <option value="福建">福建</option>
+                                <option value="安徽">安徽</option>
+                                <option value="内蒙">内蒙</option>
+                                <option value="黑龙江">黑龙江</option>
+                                <option value="陕西">陕西</option>
+                                <option value="广西">广西</option>
+                                <option value="江西">江西</option>
+                                <option value="天津">天津</option>
+                                <option value="吉林">吉林</option>
+                                <option value="山西">山西</option>
+                                <option value="重庆">重庆</option>
+                                <option value="云南">云南</option>
+                                <option value="新疆">新疆</option>
+                                <option value="贵州">贵州</option>
+                                <option value="甘肃">甘肃</option>
+                                <option value="海南">海南</option>
+                                <option value="宁夏">宁夏</option>
+                                <option value="云南">云南</option>
+                                <option value="青海">青海</option>
+                                <option value="西藏">西藏</option>
+                                <option value="香港">香港</option>
+                                <option value="澳门">澳门</option>
+                                <option value="台湾">台湾</option>
+                            </select>
+                            <label>
+                                <input type="text" name="user.company" value="企业名称" onfocus="if(this.value==&#39;企业名称&#39;)this.value=&#39;&#39;;" onblur="if(this.value==&#39;&#39;)this.value=&#39;企业名称&#39;;" id="company" style="margin-right: 0">
+                            </label>
+                        </li>
+                        <li>
+                            <div class="applyDesc" id="RequirementsId">
+                                <textarea id="requirement" name="user.requirement" onblur="if(this.value==&#39;&#39;)this.value=&#39;需求简述&#39;;" onfocus="if(this.value==&#39;需求简述&#39;)this.value=&#39;&#39;;">需求简述</textarea>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="applybtn">
+                        <input type="button" id="subBtn" class="suBtn" onclick="applySubmit(document.applyForm)" value="提交需求">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <!-- footer start -->
+        <footer class="footer " id="footer">
+            <div class="viewport ">
+                <ul>
+                    <li><h5>网站导航</h5></li>
+                    <li><a href="index.html">官网首页</a></li>
+                    <li><a href="anli.html">成功案例</a></li>
+                    <li><a href="chuangxin.html">创新合作</a></li>
+                </ul>
+                <ul>
+                    <li><h5>产品</h5></li>
+                    <li><a href="jiejuefangan1.html">网校系统</a></li>
+                    <li><a href="jiejuefangan2.html">考试测评</a></li>
+                    <li><a href="jiejuefangan3.html">互动班级</a></li>
+                    <li><a href="jiejuefangan4.html">排课教务</a></li>
+                </ul>
+                <ul>
+                    <li><h5>解决方案</h5></li>
+                    <li><a href="jiejuefangan5.html">企业培训</a></li>
+                    <li><a href="jiejuefangan7.html">云点播</a></li>
+                    <li><a href="jiejuefangan8.html">云课堂</a></li>
+                    <li><a href="jiejuefangan9.html">智慧校园</a></li>
+                </ul>
+                <ul>
+                    <li><h5>网站导航</h5></li>
+                    <li><a href="women.html">公司介绍</a></li>
+                    <li><a href="anli.html">合作伙伴</a></li>
+                    <li><a href="javascript:void(0);">联系我们</a></li>
+                </ul>
+            </div>
+            <!-- 360分析-->
+        </footer>
+        <!-- footer end -->
+    <script src="./js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <!-- <script src="./js/jquery.slides.min.js" type="text/javascript"></script> -->
+    <script src="./js/indexjs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function() {
+        effect();
+        slideScroll(".apple", ".prev", ".next", ".aSlide", 5, true);
+        goTop();
+        gtFun();
+        fixedR();
+        // 首页焦点图
+        // $("#hotSlide").hover(function() {
+        //     $('.hotSlideWrap .prev, .hotSlideWrap .next').show();
+        // }, function() {
+        //     $('.hotSlideWrap .prev, .hotSlideWrap .next').hide();
+        // })
+        // $("#hotSlide").slides({
+        //     container: 'hotSlide',
+        //     generatePagination: true,
+        //     preload: true,
+        //     preloadImage: 'img/loading.gif',
+        //     play: 5000,
+        //     pause: 2000,
+        //     hoverPause: true
+        // });
+    })
+    ////////////////////需求咨询-提交需求/////////////////////////
+
+    function applySubmit() {
+        var requirementName = $("#requirementName").val();
+        /*if(requirementName == "" || requirementName == "需求名称" ){
+          alert("请输入需求名称!");
+          $("#requirementName").focus();
+          return;
+        }*/
+
+        var applicantName = $("#applicantName").val();
+        if (applicantName == "" || applicantName == "申请人" || applicantName == 'undefined') {
+            alert("请输入姓名!");
+            $("#applicantName").focus();
+            return;
+        }
+        var mobile = $("#mobile").val();
+        var pattern = /^1{1}[0-9]{10}$/;
+        if (mobile == "" || mobile == "手机号码" || mobile == 'undefined') {
+            alert("请输入手机号!");
+            $("#mobile").focus();
+            return;
+        } else {
+            if (!pattern.test(mobile)) {
+                alert("请输入正确的手机号！");
+                $("#mobile").focus();
+                return;
+            }
+        }
+
+        var email = $("#email").val();
+        var patternep = /^[_a-zA-Z\d\-\.]+@[_a-zA-Z\d\-]+(\.[_a-zA-Z\d\-]+)+$/;
+        if (email == "" || email == "电子邮箱" || email == 'undefined') {
+            email == "";
+        } else {
+            if (!patternep.test(email)) {
+                alert("请输入正确的邮箱!");
+                $("#email").focus();
+                return;
+            }
+        }
+        var area = $("#area").find("option:selected").val();
+        if (area == '' || area == null || area == 'undefined') {
+            alert("请选择地区!");
+            $("#area").focus();
+            return;
+        }
+        var description = $("#description").val();
+        if (description == "" || description == '需求简述') {
+            description = "";
+        }
+        var company = $("#company").val();
+        if (company == "" || company == '企业名称') {
+            company = "";
+        }
+        //var companytype = $("#companytype").val() ; 
+        var URL = "/requirement/add";
+
+        $.ajax({
+            url: "http://tj.瀚杰xue.com/customer/apply!addApplyInfo.action",
+            data: {
+                "requirement.requirementName": requirementName,
+                "requirement.area": area,
+                "requirement.applicantName": applicantName,
+                "requirement.mobile": mobile,
+                "requirement.email": email,
+                "requirement.description": description,
+                "requirement.company": company
+            },
+            type: "post",
+            dataType: "json",
+            cache: false,
+            success: function(result) {
+                alert("感谢您!提交成功，我们会及时联系您！");
+            },
+            error: function(error) {
+                alert("感谢您!提交成功，我们会及时联系您！");
+            }
+        });
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+@font-face {
+font-family: 'minijianxiyuan';
+src: url('minijianxiyuan.eot');
+src: url('minijianxiyuan.eot?#iefix') format('embedded-opentype'),
+     url('minijianxiyuan.woff') format('woff'),
+     url('minijianxiyuan.ttf') format('truetype'),
+     url('minijianxiyuan.svg#minijianxiyuan') format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }

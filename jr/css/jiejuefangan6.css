@@ -1,0 +1,90 @@
+table.fushi {
+  width: 100%;
+}
+
+table.fushi tr,
+table.fushi td {
+  text-align: left;
+}
+table.fushi tr.ti {
+  border-top: 1px solid #badee5;
+  border-bottom: 1px solid #badee5;
+}
+table.fushi tr.ti th {
+  padding: 28px 0;
+}
+table.fushi tr.list {
+  background: url(../images/line.png) left bottom;
+  /*background-size: 100% auto; */
+  background-repeat: repeat-x; 
+}
+.work-list li,
+.work-params li {
+  float: left;
+  text-align: left;
+}
+.work-list li,
+table.fushi tr.list td {
+  font-size:14px;
+  color:#929292;
+  letter-spacing:0.65px;
+  line-height: 18px;
+}
+table.fushi tr.list td {
+  padding: 22px 0;
+  vertical-align: middle;
+}
+.work-params li span,
+table.fushi tr.ti th span {
+  font-size:16px;
+  color:#ffffff;
+  letter-spacing:0.74px;
+  line-height:18px;
+  padding: 4px 14px;
+  background:#37a991;
+  border-radius:100px;
+  float: left;
+  height: 24px;
+  line-height: 16px\0; 
+}
+.fushi .shebei {
+  width: 13%;
+}
+table.fushi tr.list td.xinghao {
+  padding-left: 6%;
+}
+table.fushi tr.list td.shebei,
+table.fushi tr.list td.shuliang.s {
+  border-right: 1px solid #badee5;
+}
+.fushi .xinghao {
+  width: 24%;
+}
+.fushi .shuliang {
+  width: 12%;
+}
+.fushi .fuzai {
+  width: 12%;
+}
+.fushi .quyu {
+  width: 33%;
+}
+table.fushi {
+  width: 100%;
+}
+
+table.fushi tr,
+table.fushi td {
+  text-align: left;
+}
+table.fushi tr.ti {
+  border-top: 1px solid #badee5;
+  border-bottom: 1px solid #badee5;
+}
+table.fushi tr.ti th {
+  padding: 28px 0;
+}
+table.fushi tr.list td {
+  padding-left: 2%;
+  padding-right: 2%;
+}

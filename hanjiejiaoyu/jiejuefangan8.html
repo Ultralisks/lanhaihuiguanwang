@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>云课堂 - 瀚杰在线教育软件 - 在线教育整体解决方案提供商</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9, IE=8">
+    <meta name="author" content="瀚杰教育">
+    <meta name="keywords" content="在线教育,云网校,网校搭建,瀚杰教育软件,搭建网校,网校开发,网校程序,网校制作,开源网校,网校源码,网校系统,网校软件,教育系统,教育软件,录播网校,点播网校,点播程序,直播网校,直播程序,直播软件,网校平台,课堂程序,课堂软件,网校源代码,教育云程序,教育云软件,公开课系统,教育云搭建,网校系统源码,在线课堂软件,教育软件代理,在线教育软件,在线教育系统,网校系统搭建,网络教育软件,在线教育平台,在线教学系统,教育软件系统,教育软件开发,教育软件公司,在线学习系统,网上教学系统,远程教育平台,网络教育平台,远程培训软件,网络教学软件,远程教学软件,远程教学系统,网络学习系统,培训解决方案,培训建站系统,教育解决方案,教育建站系统,网校解决方案,网校建站系统,课堂解决方案,课堂建站系统,在线考试">
+    <meta name="description" content="瀚杰在线教育是一家专注“在线教育平台”的互联网公司，在国内属顶级在线教育解决方案提供商中的领跑者。为大、中型客户提供领先的在线教育平台方案服务。">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=0.3, user-scalable=no">
+    <link rel="stylesheet" href="./css/footAndhead.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/publicity.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/fix.css">
+    <link type="text/css" rel="stylesheet" href="./css/m-webim-lite.css">
+    <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+</head>
+<style type="text/css">
+    @font-face {
+        font-family: 'PingFangSC-Semibold';
+        src: url('./font/pingfang.ttf');
+    }
+    body{font-family: PingFangSC-Semibold;}
+    #footer{background: #2E3136;}
+    #footer .viewport{display: flex;justify-content: space-around;}
+    #footer .viewport ul li{margin-bottom: 5px;}
+    #footer .viewport ul li h5{color: #9CA5AC;font-size: 16px;}
+    #footer .viewport ul li a{color: #9CA5AC;text-decoration:none;out-line: none;font-size: 14px;}
+</style>
+<body style="background:#fff;">
+    <div id="item-header">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <style>
+        .bg-shadows {
+            background: #000;
+            opacity: 0.3;
+            filter: alpha(opacity=30);
+            position: fixed;
+            _position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+            display: none;
+        }
+
+        .tryoutBox {
+            width: 450px;
+            height: 412px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin: -206px 0 0 -225px;
+            background: #fff;
+            z-index: 9999;
+            display: none;
+            border-radius: 5px;
+        }
+
+        .tryLogo {
+            display: block;
+            text-align: center;
+            padding: 40px 0;
+            line-height: 40px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #111;
+        }
+
+        .trial-ab-form {
+            padding: 0 55px;
+        }
+
+        .trial-ab-form .trialBtn {
+            height: 36px;
+            margin: 30px 0 57px 0;
+        }
+
+        .trial-ab-form .trialBtn .suBtn {
+            padding: 0;
+            background: #398ae6;
+            border: none;
+            border-radius: 0;
+            color: #fff;
+            font-size: 14px;
+            margin: 0;
+            height: 36px;
+            line-height: 36px;
+            width: 100%;
+            box-shadow: 0 0 30px rgba(43, 131, 230, .3);
+        }
+
+        .trial-ab-form li {
+            padding: 0 0 15px 0;
+        }
+
+        .trial-ab-form li input,
+        .trial-ab-form li select {
+            height: 34px;
+            line-height: 34px;
+            width: 100%;
+            background: none;
+            border: none;
+            border-bottom: solid 1px #398ae6;
+            color: #7b7c7d;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        .trial-ab-form li select {
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            padding-right: 10px;
+            background: url(../images/arrow.png) no-repeat scroll right center transparent;
+        }
+
+        .reg-try {
+            height: 30px;
+            line-height: 30px;
+            margin-top: 7px;
+        }
+
+        .reg-try a {
+            color: #398ae6;
+            font-size: 14px;
+        }
+
+        .reg-try a:hover {
+            color: #1e73e7;
+            text-decoration: none;
+        }
+
+        .close-try {
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            top: -18px;
+            right: -18px;
+            display: block;
+            background: url(../images/close-try.png) no-repeat;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .16);
+            border-radius: 50%;
+        }
+        </style>
+        <div class="ic_head_fixed">
+            <div id="header" class="header-bx">
+                <div class="viewport h-bx-v">
+                    <div class="header">
+                        <div class="header-wrap">
+                            <h1 class="logo"><a href="javascript:void(0);" title="瀚杰在线教育软件—在线教育整体解决方案提供商"><img src="./images/logo.png" alt="瀚杰在线教育软件—在线教育整体解决方案提供商"></a></h1>
+                            <div class="pc-nav-tel clearfix">
+                                <div class="nav-menu">
+                                    <ul class="nav-ul" id="nav-ul">
+                                        <li><a href="index.html" title="官网首页" target="_blank">首页</a></li>
+                                        <li class="current">
+                                            <a href="" title="产品">产品与解决方案</a>
+                                        </li>
+                                        <li>
+                                            <a href="anli.html" title="案例" target="_blank">案例</a>
+                                        </li>
+                                        <li><a href="chuangxin.html" title="生态合作">创新合作</a></li>
+                                        <li><a href="women" title="我们" target="_blank">我们</a></li>
+                                    </ul>
+                                </div>
+                                <div class="r-tel">
+                                    <a id="try-login" href="javascript:void(0);" target="_blank" class="tel-txt c-fff">登录</a>
+                                    <a id="try-reg" href="javascript:void(0);" class="tel-txt reg c-fff">试用注册</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ic-sub-nav-bx">
+                <div class="viewport">
+                    <div class="ic-sub-nav-list" id="ic-sub-nav-list">
+                        <a href="jiejuefangan1.html" target="_blank" data-id="wx-pc/" class="">网校系统</a>
+                        <a href="jiejuefangan2.html" target="_blank" data-id="exam-pc/" class="">考试测评</a>
+                        <a href="jiejuefangan3.html" target="_blank" data-id="sns-pc/" class="">互动班级</a>
+                        <a href="jiejuefangan4.html" target="_blank" data-id="jw-pc/" class="">排课教务系统</a>
+                        <a href="jiejuefangan5.html" target="_blank" data-id="nxb-pc/" class="">企业培训系统</a>
+                        <a href="jiejuefangan7.html" target="_blank" data-id="va-pc/" class="">云点播</a>
+                        <a href="jiejuefangan8.html" target="_blank" data-id="fz-pc/" class="current">云课堂</a>
+                        <a href="jiejuefangan9.html" target="_blank" data-id="zh-pc/" class="">智慧校园</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="bg-shadows"></div>
+        <!--试用注册-->
+        <div class="tryoutBox">
+            <a href="javascript:void(0);" class="close-try" id="close-try"></a>
+            <span class="tryLogo">试用注册</span>
+            <form name="applyForm" method="post" enctype="multipart/form-data">
+                <section class="trial-ab-form">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="text" id="mobile" name="user.mobile" onblur="if(this.value==&#39;&#39;)this.value=&#39;请填写您的手机号&#39;;" onfocus="if(this.value==&#39;请填写您的手机号&#39;)this.value=&#39;&#39;;" value="请填写您的手机号">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="text" id="email" name="user.email" onblur="if(this.value==&#39;&#39;)this.value=&#39;请填写您的工作邮箱&#39;;" onfocus="if(this.value==&#39;请填写您的工作邮箱&#39;)this.value=&#39;&#39;;" value="请填写您的工作邮箱">
+                            </label>
+                        </li>
+                        <li>
+                            <select id="type" name="user.requirement">
+                                <option>网校系统</option>
+                                <option>在线考试系统</option>
+                                <option>教务排课系统</option>
+                                <option>企业内训系统</option>
+                                <option>云课堂系统</option>
+                                <option>视频云服务</option>
+                                <option>知识付费系统</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="reg-try">
+                        <aside class="fl">
+                            <label class="i-checks">
+                                <input type="checkbox" checked="" class="vam" name="autoThirty" value="true" style="margin: 0">
+                                <span style="font-size: 14px;color: #7b7c7d;vertical-align: middle;">自动登录</span>
+                            </label>
+                        </aside>
+                        <aside class="fr">
+                            <a href="javascript:void(0);">登录</a>
+                        </aside>
+                    </div>
+                    <div class="trialBtn">
+                        <input type="button" id="subBtn" class="suBtn" value="注册">
+                    </div>
+                </section>
+            </form>
+        </div>
+    </div>
+    <!--网校banner开始-->
+    <div class="netC-banner w1160">
+        <div class="w1000  publicity-banner">
+            <div class="pub-img pr">
+                <img class="bounceInLeft animates" src="./images/ipad2.png" alt="">
+                <img class="bounceInDown animatDowx " src="./images/ipad.png" alt="">
+            </div>
+            <!--
+<div class="pub-img ">
+                    <img src="images/ipad.png" alt="" class="bounceInDown index-img">
+                    <img src="images/ipad2.png" alt="" class="bounceInLeft index-imgs">
+                </div>
+-->
+            <div class="pub-right re-banner-slide-20">
+                <h1 class="pr mb40"><span>云课堂 </span><sup class="icons disIb pa"></sup></h1>
+                <p class="fsize20">以互动为核心&nbsp;&nbsp;&nbsp;&nbsp;专业技术为依托</p>
+                <p class="fsize20">各类场景/领先品牌/纯种基因/合作伙伴</p>
+                <p><a href="javascript:void(0);"  title="了解更多" class="fsize20 pub-a">了解更多</a></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--网校banner结束-->
+    <!-- 创新优势开始-->
+    <div class="w1000">
+        <div class="tac pub-top">创新技术优势，贴心设计解决用户难题</div>
+        <ul class="pub-innovate">
+            <li class="active">
+                <div class="innovate-list1 temp-cover">
+                    <i></i> <img src="./images/tu9.png" alt="">
+                    <span class="fsize16 c-333">彰显品牌</span>
+                </div>
+                <div class="innovate-bot1 temp-cont">
+                    <p> 自主品牌和专属域名，配套 完善的教学体系</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-list1 temp-cover">
+                    <i></i> <img src="./images/tu10.png" alt="">
+                    <span class="fsize16 c-333">专属定制</span>
+                </div>
+                <div class="innovate-bot1  temp-cont">
+                    <p> 针对教育行业不同需求，量身打造云课堂平台</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-list1 temp-cover">
+                    <i></i> <img src="./images/tu11.png" alt="">
+                    <span class="fsize16 c-333">节约成本</span>
+                </div>
+                <div class="innovate-bot1  temp-cont">
+                    <p> 无需技术人员投入，无需硬件， 节省投资成本</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-list1 temp-cover">
+                    <i></i><img src="./images/tu12.png" alt="">
+                    <span class="fsize16 c-333">卓越品质</span>
+                </div>
+                <div class="innovate-bot1  temp-cont">
+                    <p>10余年技术经验，累计服务20000家行业客户</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-list1 temp-cover">
+                    <i></i><img src="./images/tu13.png" alt="">
+                    <span class="fsize16 c-333">稳定可靠</span>
+                </div>
+                <div class="innovate-bot1  temp-cont">
+                    <p>系统稳定易用，可同时承载上万学员在线</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-list1 temp-cover">
+                    <i></i> <img src="./images/tu14.png" alt="">
+                    <span class="fsize16 c-333">更新迭代</span>
+                </div>
+                <div class="innovate-bot1  temp-cont">
+                    <p> 产品功能快速迭代，定期维护， 免费升级</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-list1 temp-cover">
+                    <i></i><img src="./images/tu15.png" alt="">
+                    <span class="fsize16 c-333">金牌售后</span>
+                </div>
+                <div class="innovate-bot1  temp-cont">
+                    <p> 注重用户体验，为客户提供7*24 *365全程不间断服务</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-list1 temp-cover">
+                    <i></i><img src="./images/tu16.png" alt="">
+                    <span class="fsize16 c-333">多端同步</span>
+                </div>
+                <div class="innovate-bot1  temp-cont">
+                    <p> 无缝衔接PC+手机移动+IPAD， 任意场景自由切换</p>
+                </div>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <div class="wisdom-index-link-a">
+            <a class="fl active" href="javascript:void(0);" >点击咨询</a>
+        </div>
+    </div>
+    <!-- 创新优势结束-->
+    <!-- 互动式教学开始-->
+    <div class="w1160 bg-f7">
+        <div class="w1000">
+            <div class="tac pub-top pt75">翻转云课堂，教学体验更完美</div>
+            <div class="fl interact-left">
+                <img src="./images/pub1.jpg" alt="">
+            </div>
+            <div class="fr interact-right">
+                <div class="wrote">
+                    <div class="pub-interact mr20" style="vertical-align:text-bottom">
+                        <img src="./images/interact1.png" alt="">
+                    </div>
+                    <div class="interact-all1 disIb">
+                        <h3 class="mb20">互动直播</h3>
+                        <p>模拟真实课堂环境，提供稳定流畅的音视频服务，支持老师全网检索/课件上传/收藏可见/随时插入互动试题，支持学生随机抢答/多人抢答/拼时抢答/互批互改等功能，强化课堂互动性</p>
+                    </div>
+                </div>
+                <div class="wrote">
+                    <div class="pub-interact mr20">
+                        <img src="./images/interact2.png" alt="">
+                    </div>
+                    <div class="interact-all disIb">
+                        <h3 class="mb20">随堂练习</h3>
+                        <p>支持单选/多选/主观/客观等题型，具有拍照/原图编辑/手写回传等回答方式，老师能及时查看学生答题情况，方便了解学生学习状况</p>
+                    </div>
+                </div>
+                <div class="wrote">
+                    <div class="pub-interact mr20">
+                        <img src="./images/interact3.png" alt="">
+                    </div>
+                    <div class="interact-all disIb">
+                        <h3 class="mb20">监控锁屏</h3>
+                        <p>同一个域名实现跨平台自适应，老师，家长可实时监控学生上课状态，支持同一键锁屏/学生举手/在线答疑，支持PC/H5/IPAD/微信多终端自由切换</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="wisdom-index-link-a pt30">
+            <a class="fl active" href="javascript:void(0);" >点击咨询</a>
+        </div>
+    </div>
+    <!-- 互动式教学结束-->
+    <!--智能考试开始-->
+    <div class="w1160 bg-fff">
+        <div class="w1000">
+            <div class="tac pub-top">智能考试系统，查漏补缺更方便</div>
+            <div class="fr interact-left">
+                <img src="./images/pub2.jpg" alt="">
+            </div>
+            <div class="fl interact-right ">
+                <div class="wrote">
+                    <div class="pub-interact mr20" style="vertical-align:sub">
+                        <img src="./images/interact4.png" alt="">
+                    </div>
+                    <div class="interact-all1 disIb">
+                        <h3 class="mb20">轻松出卷</h3>
+                        <p>根据科目/知识点/难易程度等进行题型分类，支持word和excel模板批量导入，支持图片/动画/音视频等多媒体试题，支持单选/多选/填空/判断/问答等多种题型</p>
+                    </div>
+                </div>
+                <div class="wrote">
+                    <div class="pub-interact mr20">
+                        <img src="./images/interact5.png" alt="">
+                    </div>
+                    <div class="interact-all disIb">
+                        <h3 class="mb20">考试管理</h3>
+                        <p>考试安排可批量安排考生范围，支持考试开始时间/结束时间/考试时长/考试次数的设定，支持设定评卷人范围，防舞弊和其它安全设置策略</p>
+                    </div>
+                </div>
+                <div class="wrote">
+                    <div class="pub-interact mr20">
+                        <img src="./images/interact6.png" alt="">
+                    </div>
+                    <div class="interact-all disIb">
+                        <h3 class="mb20">智能分析</h3>
+                        <p>系统自动判分并实时反馈答题情况，提供考试成绩汇总统计报表，支持考生成绩综合查询评估，提供部门/机构成绩对比统计表等多维统计分析，方便找到学生知识短板</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="wisdom-index-link-a pt30">
+            <a class="fl active" href="javascript:void(0);" >点击咨询</a>
+        </div>
+    </div>
+    <!--智能考试结束-->
+    <!--零门槛开始-->
+    <div class="w1160 bg-f8">
+        <div class="w1000">
+            <div class="tac pub-top">先进技术支持，构建专属教学资源库</div>
+            <div class=" bg-f9 pb30">
+                <div class="tac"><img src="./images/vs.png" alt="" class="zero-img"></div>
+                <div class="">
+                    <ul class="oul-zero fl">
+                        <li class="active"><i class="icons"></i><span>场地限制</span></li>
+                        <li><i class="icons"></i><span>利用率低</span></li>
+                        <li><i class="icons"></i><span>自制自用</span></li>
+                        <li><i class="icons"></i><span>难以整理</span></li>
+                        <li><i class="icons"></i><span>品类单一</span></li>
+                    </ul>
+                    <ul class="zero-container fl">
+                        <li>
+                            <img src="./images/s5.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/s4.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/s3.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/s2.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/s1.jpg" alt="">
+                        </li>
+                    </ul>
+                    <ul class="zero-right fl">
+                        <li class="active"><i class="icons"></i><span>海量资源存储</span></li>
+                        <li><i class="icons"></i><span>随时随地使用</span></li>
+                        <li><i class="icons"></i><span>全网检索素材</span></li>
+                        <li><i class="icons"></i><span>一键分类整理</span></li>
+                        <li><i class="icons"></i><span>形式种类多元化</span></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="wisdom-index-link-a">
+                    <a class="fl active" href="javascript:void(0);" >点击咨询</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--零门槛结束-->
+    <!--海量学习开始-->
+    <div class="w1160 bg-f6">
+        <div class="w1000">
+            <div class="tac pub-tops pt75">海量学习资源上传，知识获取更轻松</div>
+            <ul class=" index_need">
+                <li class="active">
+                    <div class="index_systembgt index_sys1"></div>
+                    <span>课件</span>
+                    <strong></strong>
+                    <p><i></i><a>教学课件</a></p>
+                    <p><i></i><a>推荐课件</a></p>
+                    <p><i></i><a>名师课件</a></p>
+                    <p><i></i><a>参考课件</a></p>
+                </li>
+                <li class="">
+                    <div class="index_systembgt index_sys2"></div>
+                    <span>教案</span>
+                    <strong></strong>
+                    <p><i></i><a>名师教案</a></p>
+                    <p><i></i><a>优质教案</a></p>
+                    <p><i></i><a>教学大纲</a></p>
+                    <p><i></i><a>课程设计</a></p>
+                </li>
+                <li class="">
+                    <div class="index_systembgt index_sys3"></div>
+                    <span>素材</span>
+                    <strong></strong>
+                    <p><i></i><a>图文素材</a></p>
+                    <p><i></i><a>PPT素材</a></p>
+                    <p><i></i><a>音频素材</a></p>
+                    <p><i></i><a>视频素材</a></p>
+                </li>
+                <li class="">
+                    <div class="index_systembgt index_sys4"></div>
+                    <span>微课</span>
+                    <strong></strong>
+                    <p><i></i><a>同步微课</a></p>
+                    <p><i></i><a>精品微课</a></p>
+                    <p><i></i><a>热门微课</a></p>
+                    <p><i></i><a>定制微课</a></p>
+                </li>
+                <li class="">
+                    <div class="index_systembgt index_sys5"></div>
+                    <span>习题</span>
+                    <strong></strong>
+                    <p><i></i><a>基础练习</a></p>
+                    <p><i></i><a>拔高联习</a></p>
+                    <p><i></i><a>单元练习</a></p>
+                    <p><i></i><a>动画习题</a></p>
+                </li>
+                <li class="">
+                    <div class="index_systembgt index_sys6"></div>
+                    <span>其它</span>
+                    <strong></strong>
+                    <p><i></i><a>主题阅读</a></p>
+                    <p><i></i><a>题材阅读</a></p>
+                    <p><i></i><a>知识延伸</a></p>
+                    <p><i></i><a>课外阅读</a></p>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="wisdom-index-link-a pb50">
+            <a class="fl active" href="javascript:void(0);" >点击咨询</a>
+        </div>
+    </div>
+    <!--海量学习结束-->
+    <!--完善技术开始-->
+    <div class="w1160 bg-fff">
+        <div class="w1000">
+            <div class="tac pub-top">完善技术体系，快速响应变革需求</div>
+            <div class="w1006">
+                <div class="fr over-list">
+                    <img src="./images/x1.jpg" alt="">
+                </div>
+                <div class="fl over-right">
+                    <h3 class="fsize20 mt30 ml30 c-fff">决策支持</h3>
+                    <p class="fsize14 ">运用大数据/人工智能等先进技术来实现教学资源库的快速处理，对海量数据进行分布式数据挖掘和海量存储，对用户的决策和运营提供支持 </p>
+                </div>
+                <div class="edu-li-mask1">
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="w1006">
+                <div class="fl over-list">
+                    <img src="./images/x2.jpg" alt="">
+                </div>
+                <div class="fr over-right2">
+                    <h3 class="fsize20 mt30 ml50 c-fff">安全保护</h3>
+                    <p class="fsize14 " style="width:84%;">基于TLP2.0视频切片/视频指纹/视频加密技术，提供防录屏保护机制，保护用户版权，提供数据多重异地备份，灾难恢复，多重安全加固，系统固若金汤 </p>
+                </div>
+                <div class="edu-li-mask2">
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="w1006">
+                <div class="fr over-list">
+                    <img src="./images/x3.jpg" alt="">
+                </div>
+                <div class="fl over-right3">
+                    <h3 class="fsize20 mt30 ml30 c-fff">高效精准</h3>
+                    <p class="fsize14 ">依托云计算的分析系统，为学校/教师/学生打造高效课堂精准教学，为学生提供自适应学习系统，实现了高新技术与教育教学的深度融合 </p>
+                </div>
+                <div class="edu-li-mask1">
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="wisdom-index-link-a pt30">
+            <a class="fl active" href="javascript:void(0);" >点击咨询</a>
+        </div>
+    </div>
+    <!--完善技术结束-->
+    <!--动态信息开始-->
+    <div class="w1160 bg-f6">
+        <div class="w1000">
+            <div class="tac pub-top pt75">动态信息共享，家校师三方互通</div>
+            <div class="remove-all pr">
+                <div class="m-c-tit-bg pr">
+                    <div class="pc-mod-decoration">
+                        <div class="pc-mode-outer">
+                        </div>
+                        <div class="pc-mode-inner">
+                        </div>
+                        <div class="pc-mode-small">
+                        </div>
+                        <span class="pc-mode-circle1"></span>
+                        <span class="pc-mode-circle2"></span>
+                        <span class="pc-mode-circle3"></span>
+                        <span class="pc-mode-circle4"></span>
+                        <div class="pc-mod-deploy-img"></div>
+                    </div>
+                </div>
+                <div class=" remover-left1 remover-left ">
+                    <img src="./images/v11.png" alt="" class="disIb vam">
+                    <span class="disIb">
+                        学生前端自主学习，根据兴趣选择不同风格老师的课程进行学习；丰富的作业，课程，习题模式大大提高学生学习兴趣；在学习中的问题可以得到老师及时有效的帮助提高学习效率
+                    </span>
+                </div>
+                <div class="clear"></div>
+                <div class=" remover-left2 remover-left">
+                    <img src="./images/v12.png" alt="" class="imgs">
+                    <p>
+                        通过平台家长可以对学生的学习任务进行有效的监督与管理，并且可以查看学生绩与学校况，及时接受查看老师发送教学介意
+                    </p>
+                </div>
+                <div class="clear"></div>
+                <div class=" remover-left3 remover-left">
+                    <img src="./images/v13.png" alt="" class="imgs">
+                    <p>
+                        老师根据学生前置学习遇到的问题，给学生做出具有针对性的辅导；以及对所有学生的问题进行有效归类，集中讲解，加强短板练习
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="wisdom-index-link-a pb50">
+            <a class="fl active" href="javascript:void(0);" >点击咨询</a>
+        </div>
+    </div>
+    <!--动态信息结束-->
+    <!--完善技术开始-->
+    <div class="w1160 bg-fff">
+        <div class="w1000">
+            <div class="tac pub-top">适用不同教育行业，累计千万级用户</div>
+            <ul class="index_logoset">
+                <li>
+                    <img src="./images/wi-banner1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./images/wui-banner2.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/wui-banner3.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/wui-banner4.jpg" alt="">
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--完善技术结束-->
+    <!--翻转教学开始-->
+    <div class="w1160 bg-f1">
+        <div class="w1000">
+            <div class="tac pub-top pt75">
+                <h3 class="fsize34 c-fff">翻转式教学</h3>
+                <p class="fsize20 mt15 c-fff">让教课更便捷，让学习更轻松！</p>
+            </div>
+            <ul class="index_bottom pr">
+                <li class="index-bottom1">
+                    <img src="./images/xs.png" alt="" class="img1">
+                    <img src="./images/xs_hover.png" alt="" class="img4">
+                </li>
+                <li class="index-bottom2">
+                    <img src="./images/ls.png" alt="" class="img2">
+                    <img src="./images/ls_hover.png" alt="" class="img5">
+                </li>
+                <li class="index-bottom3">
+                    <img src="./images/jz.png" alt="" class="img3">
+                    <img src="./images/jz_hover.png" alt="" class="img6">
+                </li>
+            </ul>
+            <div class="clear"></div>
+            <div class="index-bgs"></div>
+            <ul class="list-bot">
+                <li class="index-bottom4"><a href="javascript:void(0);" >学生端体验入口</a></li>
+                <li class="index-bottom5"><a href="javascript:void(0);" >老师端体验入口</a></li>
+                <li class="index-bottom6"><a href="javascript:void(0);" >家长端体验入口</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="we-goTop" style="display: block;">&nbsp;</a>
+    <!--完善技术结束-->
+    <!-- footer start -->
+        <footer class="footer " id="footer">
+            <div class="viewport ">
+                <ul>
+                    <li><h5>网站导航</h5></li>
+                    <li><a href="index.html">官网首页</a></li>
+                    <li><a href="anli.html">成功案例</a></li>
+                    <li><a href="chuangxin.html">创新合作</a></li>
+                </ul>
+                <ul>
+                    <li><h5>产品</h5></li>
+                    <li><a href="jiejuefangan1.html">网校系统</a></li>
+                    <li><a href="jiejuefangan2.html">考试测评</a></li>
+                    <li><a href="jiejuefangan3.html">互动班级</a></li>
+                    <li><a href="jiejuefangan4.html">排课教务</a></li>
+                </ul>
+                <ul>
+                    <li><h5>解决方案</h5></li>
+                    <li><a href="jiejuefangan5.html">企业培训</a></li>
+                    <li><a href="jiejuefangan7.html">云点播</a></li>
+                    <li><a href="jiejuefangan8.html">云课堂</a></li>
+                    <li><a href="jiejuefangan9.html">智慧校园</a></li>
+                </ul>
+                <ul>
+                    <li><h5>网站导航</h5></li>
+                    <li><a href="women.html">公司介绍</a></li>
+                    <li><a href="anli.html">合作伙伴</a></li>
+                    <li><a href="javascript:void(0);">联系我们</a></li>
+                </ul>
+            </div>
+            <!-- 360分析-->
+        </footer>
+        <!-- footer end -->
+    <!--右部导航开始-->
+    <!--右部导航结束-->
+    <script>
+    $('.wisdom-index-link-a a').hover(function() {
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+
+    //      客户需求JS
+    $('.index_need li').hover(function() {
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+    $('.zero-right li').hover(function() {
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+    $('.oul-zero li').hover(function() {
+        $(this).addClass('active').siblings().removeClass('active')
+    })
+    $('.index-bottom4').mouseover(function() {
+        $(".img1").hide();
+        $(".img4").show();
+    });
+    $('.index-bottom4').mouseleave(function() {
+        $(".img1").show();
+        $(".img4").hide();
+    });
+    $('.index-bottom5').mouseover(function() {
+        $(".img2").hide();
+        $(".img5").show();
+    });
+    $('.index-bottom5').mouseleave(function() {
+        $(".img2").show();
+        $(".img5").hide();
+    });
+    $('.index-bottom6').mouseover(function() {
+        $(".img3").hide();
+        $(".img6").show();
+    });
+    $('.index-bottom6').mouseleave(function() {
+        $(".img3").show();
+        $(".img6").hide();
+    });
+    $(function() {
+        goTop();
+    })
+
+    function goTop() {
+        var gt = $(".we-goTop");
+        gt.click(function() {
+            $("html,body").animate({ "scrollTop": 0 }, 500);
+        })
+        var gtFun = function() {
+            var sH = $(document).scrollTop();
+            (sH > 280) ? gt.fadeIn(50): gt.fadeOut(50);
+        }
+        $(window).bind("scroll", gtFun);
+    };
+
+    $(".wisdom-try").click(function() {
+        $(".bg-shadows,.tryoutBox").show();
+    });
+    $(".bg-shadows,#close,#close-try").click(function() {
+        $(".bg-shadows,.videoPlay,.tryoutBox").hide();
+    })
+    </script>
+</body>
+
+</html>

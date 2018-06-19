@@ -1,0 +1,9 @@
+.foot_box div{width:100%;}
+.foot_box div ul li{width:16.6%;}
+.foot_box div ul li h1{font:700 14px "";}
+.ability_box .first .a_left{background:url(../images/index-left.png) no-repeat center center;}
+.ability_box .first .a_right{background:url(../images/index-right.png) no-repeat center center;}
+.second_nav a{margin:0 20px;}
+@media (max-width: 800px){
+    .foot_box div ul li{width:33.3%;}
+}

@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+body { min-width: 1210px; color: #666; background: #fff;}
+html, body, ul, ol, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset { padding: 0; margin: 0;}
+body, input, textarea, select, button { font-size: 12px; font-family: PingFangSC, "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft YaHei"; color: #666;}
+ul, ol, li { list-style-image: none; list-style-type: none;}
+h1, h2, h3, h4, h5, h6 { font-weight: 300;}
+a { color: #666; text-decoration: none; blr: expression(this.onFocus=this.blur()); outline: none;}
+a:active { star: expression_r(this.onFocus=this.blur());}
+a:hover { color: #ff5339; text-decoration: none; cursor: pointer;}
+a:focus, input, button, select, textarea { outline: none;}
+a img { border: none;}
+img { display: block;}
+i, em { font-style: normal;}
+.iconfont { vertical-align: middle;}
+
+/*定位*/
+.pos-r { position: relative;}
+
+/*浮动*/
+.fl { float: left;}
+.fr { float: right;}
+
+/*隐藏*/
+.hide { display: none;}
+
+/*清浮动*/
+.clear { clear: both; height: 0; overflow: hidden;}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+/*宽度*/
+.w-auto { width: auto !important;}
+.w1100 { width: 1100px !important; margin: 0 auto;}
+.w1140 { width: 1140px !important; margin: 0 auto;}
+.w1210 { width: 1210px; margin: 0 auto;}
+
+/*padding*/
+.p-t-0 { padding-top: 0 !important;}
+.p-t-10 { padding-top: 10px !important;}
+.p-t-20 { padding-top: 20px !important;}
+.p-t-25 { padding-top: 25px !important;}
+.p-t-40 { padding-top: 40px !important;}
+.p-t-45 { padding-top: 45px !important;}
+.p-t-60 { padding-top: 60px !important;}
+.p-t-80 { padding-top: 80px !important;}
+.p-t-100 { padding-top: 100px !important;}
+.p-t-120 { padding-top: 120px !important;}
+.p-t-150 { padding-top: 150px !important;}
+.p-b-0 { padding-bottom: 0 !important;}
+.p-b-15 { padding-bottom: 15px !important;}
+.p-b-25 { padding-bottom: 25px !important;}
+.p-b-30 { padding-bottom: 30px !important;}
+.p-b-35 { padding-bottom: 35px !important;}
+.p-l-100 { padding-left: 100px !important;}
+
+/*margin*/
+.m-auto { margin: 0 auto;}
+.m-t-10 { margin-top: 10px !important;}
+.m-t-30 { margin-top: 30px !important;}
+.m-t-40 { margin-top: 40px !important;}
+.m-t-80 { margin-top: 80px !important;}
+.m-r-0 { margin-right: 0 !important;}
+.m-r-15 { margin-right: 15px !important;}
+.m-r-50 { margin-right: 50px !important;}
+.m-r-100 { margin-right: 100px !important;}
+.m-b-0 { margin-bottom: 0 !important;}
+.m-b-20 { margin-bottom: 20px !important;}
+.m-b-30 { margin-bottom: 30px !important;}
+.m-b-45 { margin-bottom: 45px !important;}
+.m-b-50 { margin-bottom: 50px !important;}
+.m-b-60 { margin-bottom: 60px !important;}
+.m-l-0 { margin-left: 0 !important;}
+.m-l-120 { margin-left: 120px !important;}
+
+/*文字大小*/
+.f14 { font-size: 14px !important;}
+.f15 { font-size: 15px !important;}
+.f18 { font-size: 18px !important;}
+.f24 { font-size: 24px !important;}
+.f38 { font-size: 38px !important;}
+
+/*文字颜色*/
+.c-white { color: #fff !important;}
+.c-yellow { color: #ffcc00 !important;}
+.c-orange { color: #fe700a !important;}
+.c-orange2 { color: #f9ac48 !important;}
+.c-blue { color: #66a3ff !important;}
+.c-blue2 { color: #59bfe2 !important;}
+.c-purple { color: #db80f9 !important;}
+.c-purple2 { color: #9b9bd1 !important;}
+.c-purple3 { color: #b871f4 !important;}
+.c-green { color: #0cc469 !important;}
+.c-green2 { color: #79e58e !important;}
+.c-red { color: #ff5353 !important;}
+.c-red2 { color: #ff7e7e !important;}
+.c-gray { color: #9ba1aa !important;}
+
+/*背景色*/
+@media (min-width: 1920px) {
+    .bg-cover { background-size: cover !important;}
+}
+.bg-white { background: #fff !important;}
+.bg-gray { background: #f6fbfc;}
+.bg-gray2 { background: #f5f5f5;}
+.bg-gray3 { background: #f0f0f0;}
+.bg-gray4 { background: #f8fbff;}
+.bg-gray5 { background: #f2f2f2;}
+.bg-black { background: #333;}
+.bg-blue { background: #7594fd;}
+.bg-blue2 { background: #3eb9f5;}
+.bg-blue3 { background: #2ea7e0;}
+.bg-blue4 { background: #59bfe2;}
+.bg-blue5 { background: #5ec2e4 !important;}
+.bg-blue6 { background: #8abdf3 !important;}
+.bg-blue7 { background: #6ccdf6 !important;}
+.bg-blue8 { background: #66a3ff !important;}
+.bg-blue9 { background: #69cbef !important;}
+.bg-blue10 { background: #40bfee !important;}
+.bg-blue11 { background: #6eb0fc !important;}
+.bg-blue12 { background: #69a7ef !important;}
+.bg-blue13 { background: #44b6ff !important;}
+.bg-blue14 { background: #34bddf;}
+.bg-blue15 { background: #5dcae5;}
+.bg-blue16 { background: #00b7ee;}
+.bg-blue17 { background: #66d4f5;}
+.bg-blue18 { background: #7495ff;}
+.bg-blue19 { background: #acbfff;}
+.bg-green { background: #66d161;}
+.bg-green2 { background: #33d5bd;}
+.bg-green3 { background: #0ecc6a;}
+.bg-green4 { background: #19ba62;}
+.bg-green5 { background: #80e55e;}
+.bg-green6 { background: #79e58e !important;}
+.bg-green7 { background: #0cc469 !important;}
+.bg-green8 { background: #64eecf !important;}
+.bg-green9 { background: #47e4c1 !important;}
+.bg-green10 { background: #00c380 !important;}
+.bg-green11 { background: #0dcc6d !important;}
+.bg-green12 { background: #32d34c;}
+.bg-green13 { background: #5bdc70;}
+.bg-green14 { background: #32d34c;}
+.bg-green15 { background: #84e594;}
+.bg-green16 { background: #1be17f;}
+.bg-red { background: #fc546b;}
+.bg-red2 { background: #f04b4b;}
+.bg-red3 { background: #f85697;}
+.bg-red4 { background: #fe885f !important;}
+.bg-red5 { background: #ff7e7e !important;}
+.bg-red6 { background: #ff6868 !important;}
+.bg-red7 { background: #ff5353 !important;}
+.bg-red8 { background: #ff8c8c !important;}
+.bg-red9 { background: #f36b6b !important;}
+.bg-red10 { background: #e54c4c !important;}
+.bg-red11 { background: #fa7070 !important;}
+.bg-red12 { background: #ec6666 !important;}
+.bg-red13 { background: #f64444;}
+.bg-red14 { background: #f86969;}
+.bg-pink { background: #fa6dff;}
+.bg-pink2 { background: #f883c8;}
+.bg-pink3 { background: #ed6cb9;}
+.bg-pink4 { background: #ff7171;}
+.bg-pink5 { background: #f3a066;}
+.bg-pink6 { background: #f95699;}
+.bg-pink7 { background: #fb9ac2;}
+.bg-pink8 { background: #ff8c8c;}
+.bg-orange { background: #ff6526;}
+.bg-orange2 { background: #f8b62d;}
+.bg-orange3 { background: #f9ac48;}
+.bg-orange4 { background: #ff9543;}
+.bg-orange5 { background: #ff6600;}
+.bg-orange6 { background: #faa05a;}
+.bg-orange7 { background: #f58732;}
+.bg-orange8 { background: #f39800 !important;}
+.bg-orange9 { background: #ff9c4f;}
+.bg-orange10 { background: #ff842d;}
+.bg-orange11 { background: #eb6100;}
+.bg-yellow { background: #f7b532;}
+.bg-yellow2 { background: #f5c855;}
+.bg-yellow3 { background: #f8cc1b;}
+.bg-yellow4 { background: #ffcc00;}
+.bg-yellow5 { background: #fec96a;}
+.bg-yellow6 { background: #efb957;}
+.bg-yellow7 { background: #f4a53f;}
+.bg-yellow8 { background: #f6b765;}
+.bg-yellow9 { background: #f4b817;}
+.bg-yellow10 { background: #f8d474;}
+.bg-purple { background: #b871f4;}
+.bg-purple2 { background: #9b9bd1 !important;}
+.bg-purple3 { background: #9559d1;}
+.bg-purple4 { background: #9691f5;}
+.bg-purple5 { background: #8881ee;}
+.bg-purple6 { background: #c477f6;}
+.bg-purple7 { background: #b661ed;}
+.bg-purple8 { background: #c54cec;}
+.bg-purple9 { background: #d170f0;}
+.bg-purple10 { background: #b870f6;}
+.bg-purple11 { background: #d4a9fa;}
+.bg-purple12 { background: #db52db;}
+.bg-purple13 { background: #c770ff;}
+.bg-brown { background: #bd884f !important;}
+
+/*文字位置*/
+.text-l { text-align: left !important;}
+.text-c { text-align: center !important;}
+
+/*border*/
+.border-none { border: 0 !important;}
+
+/*旋转*/
+.xuanzhuan360 li:hover .iconfont { transform: rotateY(360deg); -webkit-transform: rotateY(360deg); -moz-transform: rotateY(360deg); -webkit-transition: 1s ease; -moz-transition: 1s ease; -o-transition: 1s ease; transition: 1s ease;}
+
+/*按钮*/
+.btn { display: inline-block; height: 30px; min-width: 80px; padding: 0 10px; font-size: 12px; font-weight: normal; line-height: 30px; color: #666; text-align: center; cursor: pointer; vertical-align: middle; text-decoration: none; border-radius: 2px;}

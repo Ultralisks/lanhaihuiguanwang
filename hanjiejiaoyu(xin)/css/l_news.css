@@ -1,0 +1,74 @@
+.l_content{
+	margin-bottom: 50px;
+}
+.l_content section{
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+.l_content p{
+	font-size: 21px;
+	margin:20px 0;
+}
+.l_content p:first-child{
+	font-size: 24px;
+}
+.map-showSm {
+    position: relative;
+    padding: 3%;
+}
+.mapbox {
+    padding: 3px;
+    border: none;
+    overflow: hidden;
+}
+.con-conter {
+	width: 1180px !important;
+    margin: 0 auto;
+}
+
+.mapbox li {
+    width: 570px;
+    height: 260px;
+    float: left;
+    margin: 10px 5px;
+    line-height: 20px;
+}
+.bj {
+    background: url(../images/qd.png) no-repeat;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.maptxt p {
+    line-height: 36px;
+    font-size: 14px;
+        margin: 0;
+}
+.maptxt {
+    background: url(../images/mapbg.png) no-repeat;
+    
+    margin: 30px;
+    padding: 40px;
+}
+.bjmap {
+    background: url(../images/bj.png) no-repeat;
+    margin-right: 20px;
+    display: inline-block;
+}
+.bjma {
+    background: url(../images/gz.png) no-repeat;
+    margin-right: 20px;
+    display: inline-block;
+}
+.bjm {
+    background: url(../images/JN.png) no-repeat;
+    margin-right: 20px;
+    display: inline-block;
+}
+.maptxt p strong {
+    font-size: 16px;
+}
+
+strong {
+    font-weight: bold;
+}
